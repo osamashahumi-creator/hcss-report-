@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تقرير الأمن والاستقرار الاستراتيجي — الساحل وشمال أفريقيا | مركز هيسبيريديس</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --bg:#080808; --bg2:#0d0d0f; --panel:#141318; --panel2:#1a1920;
+  --ink:#ece7d9; --ink2:#c4bda9; --muted:#8a8472;
+  --gold:#d4af37; --gold-br:#f1d57a; --gold-dk:#9c7c1e; --gold-deep:#6f5713;
+  --line:#3a3320; --line2:#262219;
+  --red:#d0432f; --orange:#e07b2d; --amber:#dca42c; --lime:#9bb04a; --green:#4f9d6b;
+  --blue:#4a86c0;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans Arabic',sans-serif;
+  font-size:15px;line-height:1.9;-webkit-font-smoothing:antialiased;}
+
+/* progress bar */
+#progress{position:fixed;top:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold-br),var(--gold));
+  width:0;z-index:9999;transition:width .1s;}
+
+/* top nav */
+nav{position:sticky;top:0;z-index:900;background:rgba(8,8,8,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);padding:0 18px;}
+nav .wrap{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:6px;
+  flex-wrap:wrap;min-height:52px;}
+nav .brand{font-family:'Noto Kufi Arabic';font-weight:700;color:var(--gold);font-size:13px;
+  margin-left:auto;letter-spacing:.3px;}
+nav a{color:var(--ink2);text-decoration:none;font-size:12.5px;padding:6px 11px;border-radius:6px;
+  font-family:'Noto Kufi Arabic';transition:.15s;white-space:nowrap;}
+nav a:hover{background:rgba(212,175,55,.12);color:var(--gold-br);}
+
+.page{max-width:1180px;margin:0 auto;padding:0 26px;}
+section.block{padding:54px 0 10px;border-bottom:1px solid var(--line2);}
+section.block:last-child{border-bottom:none;}
+
+/* cover */
+.cover{min-height:96vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;position:relative;overflow:hidden;padding:60px 20px;}
+.cover::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 30%,rgba(212,175,55,.10),transparent 60%);z-index:0;}
+.cover>*{position:relative;z-index:1;}
+.cover .frame{position:absolute;inset:22px;border:1px solid rgba(212,175,55,.28);border-radius:8px;z-index:0;}
+.cover .frame::before{content:"";position:absolute;inset:8px;border:1px solid rgba(212,175,55,.12);border-radius:6px;}
+.emblem{width:128px;height:128px;margin-bottom:22px;}
+.cover h1{font-family:'Noto Kufi Arabic';font-weight:900;font-size:46px;color:var(--gold-br);
+  line-height:1.35;margin:6px 0;text-shadow:0 2px 20px rgba(212,175,55,.2);}
+.cover .org{font-family:'Noto Kufi Arabic';font-size:21px;color:var(--gold);margin:18px 0 4px;font-weight:600;}
+.cover .org-en{font-size:13px;color:var(--muted);letter-spacing:1px;}
+.cover .sub{font-size:19px;color:var(--ink2);margin-top:10px;}
+.cover .rule{width:160px;height:2px;margin:26px auto;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.cover .meta{margin-top:30px;font-size:13.5px;color:var(--muted);line-height:2.2;}
+.classif{display:inline-block;font-family:'Noto Kufi Arabic';font-size:11.5px;letter-spacing:3px;
+  color:var(--gold);border:1px solid var(--gold-dk);border-radius:30px;padding:7px 22px;margin-bottom:26px;}
+.cover .window-badge{display:inline-block;margin-top:20px;background:rgba(212,175,55,.08);
+  border:1px solid var(--line);border-radius:8px;padding:10px 22px;color:var(--gold-br);
+  font-family:'Noto Kufi Arabic';font-size:15px;}
+
+/* typography */
+.kicker{display:inline-flex;align-items:center;gap:9px;font-family:'Noto Kufi Arabic';
+  font-size:11.5px;letter-spacing:2px;color:var(--gold);background:rgba(212,175,55,.07);
+  border:1px solid var(--line);border-radius:30px;padding:6px 16px;margin-bottom:16px;}
+h2.title{font-family:'Noto Kufi Arabic';font-weight:800;font-size:33px;color:var(--gold-br);
+  margin:6px 0 8px;line-height:1.35;}
+h3.sub{font-family:'Noto Kufi Arabic';font-weight:700;font-size:21px;color:var(--gold);
+  margin:30px 0 12px;padding-bottom:9px;border-bottom:2px solid var(--gold-deep);
+  display:flex;align-items:center;gap:10px;}
+h3.sub::before{content:"";width:9px;height:9px;background:var(--gold);transform:rotate(45deg);flex:none;}
+h4.sub2{font-family:'Noto Kufi Arabic';font-weight:600;font-size:16px;color:var(--gold-br);margin:20px 0 8px;}
+p{margin:.5em 0 1em;color:var(--ink);}
+.lead{font-size:16px;color:var(--ink);border-right:3px solid var(--gold);padding:4px 16px;
+  margin:14px 0;background:linear-gradient(270deg,transparent,rgba(212,175,55,.04));}
+strong{color:var(--gold-br);font-weight:600;}
+.muted{color:var(--muted);}
+ul.clean{list-style:none;margin:10px 0;}
+ul.clean li{position:relative;padding:5px 22px 5px 0;}
+ul.clean li::before{content:"◂";position:absolute;right:0;color:var(--gold);font-size:13px;top:7px;}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;margin:16px 0 22px;border:1px solid var(--line);border-radius:10px;}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px;}
+thead th{background:linear-gradient(180deg,#272009,#1a1506);color:var(--gold-br);
+  font-family:'Noto Kufi Arabic';font-weight:700;font-size:13px;padding:13px 14px;text-align:right;
+  border-bottom:2px solid var(--gold-dk);position:sticky;top:0;}
+tbody td{padding:11px 14px;border-bottom:1px solid var(--line2);vertical-align:top;color:var(--ink);}
+tbody tr:nth-child(even){background:rgba(255,255,255,.014);}
+tbody tr:hover{background:rgba(212,175,55,.05);}
+td.c,th.c{text-align:center;}
+.date-c{color:var(--gold);font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums;}
+.score-c{font-weight:800;font-family:'Noto Kufi Arabic';text-align:center;color:#fff;font-size:15px;}
+
+/* risk dashboard */
+.dash{display:grid;gap:8px;margin:18px 0 8px;}
+.drow{display:grid;grid-template-columns:185px 1fr 50px 110px 88px;align-items:center;gap:13px;
+  background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:9px 14px;transition:.15s;}
+.drow:hover{border-color:var(--gold-dk);background:var(--panel2);}
+.drow .lbl{font-family:'Noto Kufi Arabic';font-size:13px;color:var(--ink);}
+.track{height:10px;background:#221f17;border-radius:6px;overflow:hidden;border:1px solid var(--line2);}
+.fill{height:100%;border-radius:6px;transition:width 1s cubic-bezier(.2,.8,.2,1);}
+.drow .val{font-family:'Noto Kufi Arabic';font-weight:800;font-size:17px;text-align:center;}
+.band{font-size:10px;font-family:'Noto Kufi Arabic';text-align:center;padding:3px 7px;border-radius:12px;}
+.trend{font-size:10.5px;font-family:'Noto Kufi Arabic';text-align:center;padding:3px 8px;border-radius:12px;white-space:nowrap;}
+.t-up{color:#ff8a5c;background:rgba(208,67,47,.13);border:1px solid #7d241b;}
+.t-dn{color:#74c79a;background:rgba(79,157,107,.13);border:1px solid #2c6244;}
+.t-fl{color:var(--ink2);background:rgba(255,255,255,.04);border:1px solid var(--line2);}
+
+.r-10,.r-9,.r-8{} /* color classes via JS */
+.c-ext{background:linear-gradient(90deg,#7d241b,#d0432f);} .x-ext{color:#ff6f5e;}
+.c-high{background:linear-gradient(90deg,#8a3a18,#e07b2d);} .x-high{color:#ff9a5c;}
+.c-elev{background:linear-gradient(90deg,#7a5e12,#dca42c);} .x-elev{color:#f0c04a;}
+.c-med{background:linear-gradient(90deg,#5f6f29,#9bb04a);} .x-med{color:#bcd06a;}
+.c-low{background:linear-gradient(90deg,#2c6244,#4f9d6b);} .x-low{color:#74c79a;}
+.bd-ext{background:rgba(208,67,47,.16);border:1px solid #7d241b;color:#ff8a78;}
+.bd-high{background:rgba(224,123,45,.15);border:1px solid #8a3a18;color:#ffa766;}
+.bd-elev{background:rgba(220,164,44,.14);border:1px solid #7a5e12;color:#f0c863;}
+.bd-med{background:rgba(155,176,74,.14);border:1px solid #5f6f29;color:#c4d680;}
+.bd-low{background:rgba(79,157,107,.14);border:1px solid #2c6244;color:#82d0a4;}
+
+/* assessment cards */
+.assess{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0;}
+.assess .box{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--gold);
+  border-radius:10px;padding:15px 17px;}
+.assess .box.what{border-top-color:var(--blue);}
+.assess .box.why{border-top-color:var(--gold);}
+.assess .box.imp{border-top-color:var(--red);}
+.assess .box h4{font-family:'Noto Kufi Arabic';font-size:14px;margin-bottom:7px;}
+.assess .box.what h4{color:#7bb0e0;} .assess .box.why h4{color:var(--gold-br);} .assess .box.imp h4{color:#ff8a78;}
+.assess .box p{font-size:13px;color:var(--ink2);margin:0;}
+
+/* scenarios */
+.scen{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0;}
+.scen .s{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;position:relative;}
+.scen .s .tag{font-family:'Noto Kufi Arabic';font-size:11.5px;letter-spacing:1px;
+  text-transform:uppercase;display:block;margin-bottom:8px;}
+.scen .s .prob{font-family:'Noto Kufi Arabic';font-size:34px;font-weight:800;line-height:1;}
+.scen .s .probbar{height:6px;background:#221f17;border-radius:4px;margin:10px 0;overflow:hidden;}
+.scen .s .probbar span{display:block;height:100%;}
+.scen .s p{font-size:12.5px;color:var(--ink2);margin:6px 0 0;}
+.scen .likely{border-color:var(--gold-dk);} .scen .likely .tag,.scen .likely .prob{color:var(--gold-br);}
+.scen .likely .probbar span{background:var(--gold);}
+.scen .best{border-color:#2c6244;} .scen .best .tag,.scen .best .prob{color:var(--green);}
+.scen .best .probbar span{background:var(--green);}
+.scen .worst{border-color:#7d241b;} .scen .worst .tag,.scen .worst .prob{color:var(--red);}
+.scen .worst .probbar span{background:var(--red);}
+
+/* influence bar */
+.inf{height:7px;background:#221f17;border-radius:5px;overflow:hidden;min-width:60px;}
+.inf span{display:block;height:100%;background:linear-gradient(90deg,var(--gold-dk),var(--gold-br));}
+
+/* stat tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:20px 0;}
+.tile{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);
+  border-radius:12px;padding:18px 14px;text-align:center;}
+.tile .big{font-family:'Noto Kufi Arabic';font-size:30px;font-weight:800;color:var(--gold-br);line-height:1;}
+.tile .cap{font-size:11.5px;color:var(--muted);margin-top:7px;line-height:1.5;}
+
+/* notes */
+.note{background:rgba(212,175,55,.05);border:1px solid var(--line);border-right:3px solid var(--gold);
+  border-radius:8px;padding:13px 17px;margin:16px 0;font-size:13.5px;color:var(--ink2);}
+.note.warn{border-right-color:var(--red);background:rgba(208,67,47,.05);}
+.note strong{color:var(--gold-br);}
+
+/* country header */
+.country-hdr{display:flex;align-items:center;gap:18px;margin:10px 0 6px;padding:20px 24px;
+  background:linear-gradient(270deg,rgba(212,175,55,.06),var(--panel));
+  border:1px solid var(--line);border-radius:14px;}
+.country-hdr .rank{font-family:'Noto Kufi Arabic';font-size:12px;color:var(--muted);}
+.country-hdr h2{font-family:'Noto Kufi Arabic';font-weight:900;font-size:40px;color:var(--gold-br);line-height:1;}
+.country-hdr .en{font-size:13px;color:var(--muted);letter-spacing:2px;}
+.country-hdr .score-badge{margin-right:auto;text-align:center;padding:10px 20px;border-radius:12px;
+  border:1px solid var(--line);min-width:120px;}
+.country-hdr .score-badge .n{font-family:'Noto Kufi Arabic';font-size:32px;font-weight:800;line-height:1;}
+.country-hdr .score-badge .t{font-size:10.5px;color:var(--ink2);margin-top:4px;font-family:'Noto Kufi Arabic';}
+
+/* charts */
+.chart-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:18px 0;}
+.chart-card .ct{font-family:'Noto Kufi Arabic';font-size:14px;color:var(--gold-br);margin-bottom:6px;}
+.chart-card .cs{font-size:11.5px;color:var(--muted);margin-bottom:12px;}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:11.5px;color:var(--ink2);margin-top:10px;}
+.legend i{width:12px;height:12px;border-radius:3px;display:inline-block;margin-left:6px;vertical-align:middle;}
+svg{display:block;max-width:100%;height:auto;}
+.fig{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:18px 0;}
+.fig .cap{font-size:11.5px;color:var(--muted);padding:9px 16px;border-top:1px solid var(--line2);font-family:'Noto Kufi Arabic';}
+
+/* sources */
+.sources{font-size:12px;color:var(--ink2);line-height:1.7;list-style:none;}
+.sources li{margin-bottom:7px;padding-right:26px;position:relative;}
+.sources li .num{position:absolute;right:0;color:var(--gold);font-weight:700;font-family:'Noto Kufi Arabic';}
+.sources a{color:var(--gold-dk);text-decoration:none;word-break:break-all;}
+.sources a:hover{color:var(--gold-br);}
+.src-date{color:var(--muted);font-variant-numeric:tabular-nums;}
+
+/* footer */
+footer{background:var(--bg2);border-top:1px solid var(--line);padding:40px 26px;text-align:center;margin-top:30px;}
+footer .org{font-family:'Noto Kufi Arabic';color:var(--gold);font-size:17px;font-weight:600;}
+footer .dis{font-size:11.5px;color:var(--muted);max-width:760px;margin:14px auto 0;line-height:1.8;}
+
+/* toc */
+.toc{display:grid;grid-template-columns:1fr 1fr;gap:8px 28px;margin:18px 0;}
+.toc a{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;
+  border-bottom:1px dotted var(--line);color:var(--ink);text-decoration:none;font-size:14px;}
+.toc a:hover{color:var(--gold-br);}
+.toc a .n{color:var(--gold);font-family:'Noto Kufi Arabic';font-weight:600;margin-left:10px;}
+
+.verify{border-bottom:1px dotted #b9863a;cursor:help;}
+.verify::after{content:"⚑";font-size:8px;color:#b9863a;vertical-align:super;margin-right:1px;}
+
+@media(max-width:880px){
+  .assess,.scen,.tiles{grid-template-columns:1fr;}
+  .drow{grid-template-columns:120px 1fr 40px;gap:8px;}
+  .drow .band,.drow .trend{display:none;}
+  .toc{grid-template-columns:1fr;}
+  .country-hdr{flex-wrap:wrap;}
+  .cover h1{font-size:32px;}
+  nav .wrap a{font-size:11px;padding:5px 7px;}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<nav>
+  <div class="wrap">
+    <a href="#exec">الملخص التنفيذي</a>
+    <a href="#regional">الإقليمي</a>
+    <a href="#libya">ليبيا</a>
+    <a href="#sudan">السودان</a>
+    <a href="#mali">مالي</a>
+    <a href="#niger">النيجر</a>
+    <a href="#chad">تشاد</a>
+    <a href="#algeria">الجزائر</a>
+    <a href="#compare">المقارن</a>
+    <a href="#outlook">الاستشراف</a>
+    <a href="#refs">المراجع</a>
+    <span class="brand">◆ مركز هيسبيريديس</span>
+  </div>
+</nav>
+
+<!-- ============ COVER ============ -->
+<header class="cover">
+  <div class="frame"></div>
+  <div class="classif">وثيقة تقييم استراتيجي · للتوزيع المحدود</div>
+
+  <svg class="emblem" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="65" cy="65" r="61" fill="#0f0e0a" stroke="#d4af37" stroke-width="2.5"/>
+    <circle cx="65" cy="65" r="53" fill="none" stroke="#9c7c1e" stroke-width="1"/>
+    <!-- classical facade -->
+    <g fill="#d4af37">
+      <path d="M40 52 L65 38 L90 52 Z"/>
+      <rect x="41" y="53" width="48" height="3.4"/>
+      <rect x="44" y="58" width="4.2" height="20"/>
+      <rect x="53" y="58" width="4.2" height="20"/>
+      <rect x="62" y="58" width="4.2" height="20"/>
+      <rect x="71" y="58" width="4.2" height="20"/>
+      <rect x="80" y="58" width="4.2" height="20"/>
+      <rect x="40" y="79" width="50" height="3.6"/>
+      <rect x="37" y="83.5" width="56" height="3"/>
+    </g>
+    <!-- laurel -->
+    <path d="M30 70 Q26 86 40 96" fill="none" stroke="#9c7c1e" stroke-width="2"/>
+    <path d="M100 70 Q104 86 90 96" fill="none" stroke="#9c7c1e" stroke-width="2"/>
+    <!-- wave motif (sahel/desert) -->
+    <path d="M40 90 q6 -4 12 0 t12 0 t12 0" fill="none" stroke="#f1d57a" stroke-width="1.4" opacity=".7"/>
+  </svg>
+
+  <div class="org">مركز هيسبيريديس للدراسات الأمنية والاستراتيجية</div>
+  <div class="org-en">HESPERIDES CENTRE FOR SECURITY &amp; STRATEGIC STUDIES</div>
+
+  <div class="rule"></div>
+
+  <h1>تقرير الأمن والاستقرار الاستراتيجي</h1>
+  <div class="sub">منطقة الساحل وشمال أفريقيا</div>
+
+  <div class="window-badge">التقرير الشهري · فترة الرصد: 22 مايو – 21 يونيو 2026</div>
+
+  <div class="meta">
+    الدول المغطاة: ليبيا · السودان · مالي · النيجر · تشاد · الجزائر<br>
+    منهجية: استخبارات مفتوحة المصدر (OSINT) · عشرة مؤشرات مخاطر لكل دولة<br>
+    <span style="color:var(--gold)">رقم الوثيقة: HCSS/SAH-NA/MR-2026-06 · التصنيف: تحليلي تقديري</span>
+  </div>
+</header>
+
+<div class="page">
+<!-- ============ METHODOLOGY ============ -->
+<section class="block" id="method">
+  <span class="kicker">إشعار منهجي</span>
+  <h2 class="title">المنهجية ومفتاح القراءة</h2>
+  <p class="lead">يعتمد هذا التقرير منهجية الاستخبارات مفتوحة المصدر (OSINT)، ويغطّي حصراً تطورات الثلاثين يوماً الممتدة بين 22 مايو و21 يونيو 2026. صيغ على غرار منهجيات مراكز مثل Control Risks وThe Inkerman Group وJanes من حيث بنية التقييم وتدرّج المخاطر وصياغة التوقعات بسيناريوهات مرجّحة.</p>
+
+  <div class="note">
+    <strong>قاعدة التحقق:</strong> يُعتمد الحدث عند تأكيده من مصدرين مستقلين على الأقل. الأرقام الصادرة عن أطراف النزاع أو المعتمدة على مصدر وحيد تُوسَم بعلامة <span class="verify">يتطلب تحققاً</span> وتُذكر بوصفها ادعاءً لا واقعة مؤكدة. تتفاوت تقديرات الضحايا والنزوح بين المصادر، وقد أوردنا المدى حيثما تباينت.
+  </div>
+
+  <h3 class="sub">مفتاح تدرّج المخاطر (0–10)</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th class="c">النطاق</th><th>التصنيف</th><th>الدلالة لصانع القرار</th></tr></thead>
+      <tbody>
+        <tr><td class="score-c" style="background:#7d241b">10</td><td>خطر مرتفع جداً</td><td>انهيار قائم أو وشيك؛ يستلزم استجابة فورية وإعادة تقييم للوجود والاستثمار.</td></tr>
+        <tr><td class="score-c" style="background:#a8351b">8–9</td><td>خطر مرتفع</td><td>تدهور متسارع واحتمال عالٍ لأحداث كبرى خلال أسابيع.</td></tr>
+        <tr><td class="score-c" style="background:#b06a18">6–7</td><td>خطر متوسط مرتفع</td><td>هشاشة بنيوية مع محفّزات نشطة؛ مراقبة لصيقة وخطط طوارئ.</td></tr>
+        <tr><td class="score-c" style="background:#7a6a1c">4–5</td><td>خطر متوسط</td><td>توتر قابل للاحتواء؛ استقرار مشروط بعوامل خارجية.</td></tr>
+        <tr><td class="score-c" style="background:#5f6f29">2–3</td><td>خطر منخفض</td><td>استقرار نسبي مع مخاطر كامنة محدودة الأثر.</td></tr>
+        <tr><td class="score-c" style="background:#2c6244">0–1</td><td>خطر محدود</td><td>بيئة مستقرة؛ تهديدات هامشية لا تؤثر على القرار الاستراتيجي.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">جدول المحتويات</h3>
+  <div class="toc">
+    <a href="#exec"><span><span class="n">1</span> الملخص التنفيذي الإقليمي</span></a>
+    <a href="#regional"><span><span class="n">2</span> التقييم الإقليمي والاتجاهات العابرة</span></a>
+    <a href="#libya"><span><span class="n">3</span> ليبيا — قسم موسّع</span></a>
+    <a href="#sudan"><span><span class="n">4</span> السودان</span></a>
+    <a href="#mali"><span><span class="n">5</span> مالي</span></a>
+    <a href="#niger"><span><span class="n">6</span> النيجر</span></a>
+    <a href="#chad"><span><span class="n">7</span> تشاد</span></a>
+    <a href="#algeria"><span><span class="n">8</span> الجزائر</span></a>
+    <a href="#compare"><span><span class="n">9</span> التحليل المقارن الإقليمي</span></a>
+    <a href="#outlook"><span><span class="n">10</span> الاستشراف الاستراتيجي</span></a>
+    <a href="#refs"><span><span class="n">11</span> قائمة المراجع الكاملة</span></a>
+  </div>
+</section>
+
+<!-- ============ EXECUTIVE SUMMARY ============ -->
+<section class="block" id="exec">
+  <span class="kicker">القسم الأول · ملخص تنفيذي</span>
+  <h2 class="title">الملخص التنفيذي الإقليمي</h2>
+
+  <p class="lead">شهدت نافذة الرصد (22 مايو – 21 يونيو 2026) تصعيداً متزامناً عبر ثلاث بؤر رئيسية تعيد رسم خريطة المخاطر في الساحل وشمال أفريقيا: حشد قوات الدعم السريع لهجوم متعدد المحاور على الأُبيّض في السودان مع حملة مسيّرات مكثّفة؛ وتصعيد جماعة نصرة الإسلام والمسلمين (JNIM) عملياتها في مالي مع حصار للوقود؛ وهجوم لافت على مطار نيامي الدولي في النيجر. في المقابل، برزت مؤشرات على زخم سياسي أممي في ليبيا تزامن مع أعلى إيرادات نفطية منذ اثني عشر عاماً.</p>
+
+  <div class="tiles">
+    <div class="tile"><div class="big">6</div><div class="cap">دول تحت التقييم المعمّق</div></div>
+    <div class="tile"><div class="big">10</div><div class="cap">مؤشرات مخاطر لكل دولة</div></div>
+    <div class="tile"><div class="big">3</div><div class="cap">بؤر تصعيد عالية الحدّة</div></div>
+    <div class="tile"><div class="big">30</div><div class="cap">يوماً نافذة الرصد</div></div>
+  </div>
+
+  <h3 class="sub">أبرز أحداث الشهر</h3>
+  <ul class="clean">
+    <li><strong>السودان:</strong> حشد قوات الدعم السريع لهجوم متعدد المحاور على مدينة الأُبيّض (عاصمة شمال كردفان) ضمن حملة مسيّرات استمرت نحو عشرة أيام استهدفت بنى مدنية وخدمية. <span class="verify">تقديرات الضحايا متباينة</span></li>
+    <li><strong>النيجر:</strong> هجوم على مطار نيامي الدولي في 18 يونيو أسفر عن سقوط قتلى، في ضربة رمزية لقلب العاصمة وسط خطاب «حالة الحرب». <span class="verify">حصيلة أولية</span></li>
+    <li><strong>مالي:</strong> تصعيد JNIM عملياتها مع فرض حصار/تضييق على إمدادات الوقود ومحاور غرب البلاد (كايس) ومحيط العاصمة باماكو، وضغط متواصل على الشمال.</li>
+    <li><strong>ليبيا:</strong> زخم سياسي بقيادة البعثة الأممية لإعادة إطلاق المسار، تزامن مع بلوغ الإيرادات النفطية أعلى مستوى منذ اثني عشر عاماً، مقابل توتر أمني متقطّع في طرابلس.</li>
+    <li><strong>تشاد:</strong> ترسيخ الرئيس محمد إدريس ديبي قبضته الداخلية مع استمرار اعتقال زعيم المعارضة سوكسيس مسرا، وضغط متصاعد من لاجئي السودان شرقاً.</li>
+    <li><strong>الجزائر:</strong> تآكل تدريجي لدورها التقليدي كوسيط في الساحل مع توتر مستمر مع مالي ومحور دول الساحل، مقابل استقرار داخلي وجاهزية حدودية مرتفعة.</li>
+  </ul>
+
+  <h3 class="sub">الاتجاهات الإقليمية الصاعدة</h3>
+  <ul class="clean">
+    <li><strong>تطبيع المسيّرات أداةً للحسم:</strong> انتقلت الطائرات المسيّرة إلى صدارة أدوات الضرب في السودان وليبيا، مغيِّرةً حسابات حماية المدنيين والبنى التحتية.</li>
+    <li><strong>اقتصاد الحصار سلاحاً:</strong> تحوّل حصار JNIM لإمدادات الوقود في مالي إلى أداة ضغط استراتيجي على الدولة والمدن.</li>
+    <li><strong>إعادة تموضع التحالفات:</strong> تماسك محور دول الساحل (مالي–النيجر–بوركينا فاسو) مقابل تراجع النفوذ الفرنسي–الغربي وتمدد البصمة الروسية (الفيلق الأفريقي).</li>
+    <li><strong>تشابك أزمات الحدود:</strong> امتداد حرب السودان نحو تشاد، ومثلث ليبتاكو-غورما، والممر الصحراوي الليبي تشكّل نسيجاً أمنياً واحداً.</li>
+  </ul>
+
+  <h3 class="sub">الجهات الفاعلة الأكثر تأثيراً</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>الفاعل</th><th>نطاق التأثير</th><th class="c">الاتجاه</th></tr></thead>
+      <tbody>
+        <tr><td>جماعة نصرة الإسلام والمسلمين (JNIM)</td><td>مالي، النيجر، حدود بوركينا فاسو</td><td class="c"><span class="trend t-up">▲ تصاعد</span></td></tr>
+        <tr><td>قوات الدعم السريع (RSF)</td><td>دارفور، كردفان، محيط الخرطوم</td><td class="c"><span class="trend t-up">▲ تصاعد</span></td></tr>
+        <tr><td>الجيش السوداني (SAF)</td><td>وسط وشرق السودان ووادي النيل</td><td class="c"><span class="trend t-fl">■ مستقر</span></td></tr>
+        <tr><td>المجالس العسكرية (مالي/النيجر/تشاد)</td><td>الساحل الأوسط</td><td class="c"><span class="trend t-fl">■ مستقر</span></td></tr>
+        <tr><td>روسيا (الفيلق الأفريقي)</td><td>مالي، ليبيا، امتداد نحو السودان</td><td class="c"><span class="trend t-up">▲ تصاعد</span></td></tr>
+        <tr><td>تركيا</td><td>ليبيا (الغرب) وامتداد ساحلي</td><td class="c"><span class="trend t-fl">■ مستقر</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">المخاطر المتوقعة خلال الشهر القادم</h3>
+  <ul class="clean">
+    <li>سقوط محتمل للأُبيّض أو حصار خانق لها يفتح الطريق نحو وسط السودان ويطلق موجة نزوح كبرى.</li>
+    <li>اشتداد حصار JNIM للوقود في مالي مع ضغط على باماكو ومحور كايس الحيوي.</li>
+    <li>عمليات عابرة في مثلث ليبتاكو-غورما تمتد أثراً إلى النيجر وبوركينا والحدود الجزائرية–الموريتانية.</li>
+    <li>هشاشة هدنة ليبيا في طرابلس مع خطر تجدد اشتباكات الفصائل رغم الزخم السياسي.</li>
+    <li>استمرار تدهور الوضع الإنساني في السودان وتشاد تحت ضغط النزوح والمجاعة الموضعية.</li>
+  </ul>
+
+  <h3 class="sub">الأثر على الاستقرار الإقليمي</h3>
+  <p>تتجه المنطقة نحو <strong>توازن هشّ سالب</strong>: لا انفراج قريب، بل ترسيخ لأنماط العنف المزمن وتآكل لقدرة الدول على فرض السيادة في أطرافها. يبقى السودان المصدّر الأول لعدم الاستقرار نحو الجوار، فيما تتحول مالي إلى مركز زلزال يهدد كامل الساحل الأوسط. وتؤكد المؤشرات الحالية الحاجة إلى تنسيق أمني وإقليمي أكثر فاعلية لاحتواء تداعيات النزاعات والحد من تمدد الجماعات المتطرفة عبر الحدود.</p>
+</section>
+<!-- ============ REGIONAL ASSESSMENT ============ -->
+<section class="block" id="regional">
+  <span class="kicker">القسم الأول · 2</span>
+  <h2 class="title">التقييم الإقليمي والاتجاهات العابرة للحدود</h2>
+  <p class="lead">يقدّم هذا الفصل قراءة بانورامية للفضاء الممتد من الأطلسي إلى البحر الأحمر، حيث تتقاطع ست بيئات نزاع عبر شبكات تهريب وهجرة وتمويل تجعل الأمن مسألة إقليمية مترابطة لا قطرية معزولة.</p>
+
+  <!-- regional threat map -->
+  <div class="fig">
+    <svg viewBox="0 0 960 500" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Sans Arabic',sans-serif">
+      <defs>
+        <radialGradient id="hot" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#d0432f" stop-opacity=".55"/><stop offset="1" stop-color="#d0432f" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="warm" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#e07b2d" stop-opacity=".5"/><stop offset="1" stop-color="#e07b2d" stop-opacity="0"/>
+        </radialGradient>
+        <marker id="ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+          <path d="M0 0 L6 3 L0 6 Z" fill="#d4af37"/>
+        </marker>
+      </defs>
+      <rect width="960" height="500" fill="#0c0e11"/>
+      <rect x="0" y="0" width="960" height="64" fill="#13242c"/>
+      <text x="480" y="26" fill="#5b7d88" font-size="13" text-anchor="middle">البحر الأبيض المتوسط</text>
+      <path d="M30 70 L900 70 L900 380 L660 430 L380 450 L120 400 L30 300 Z" fill="#1a1813" stroke="#3a3320" stroke-width="1.5"/>
+
+      <ellipse cx="730" cy="250" rx="125" ry="95" fill="url(#hot)"/>
+      <ellipse cx="290" cy="300" rx="115" ry="85" fill="url(#hot)"/>
+      <ellipse cx="470" cy="330" rx="95" ry="72" fill="url(#warm)"/>
+      <ellipse cx="580" cy="350" rx="85" ry="62" fill="url(#warm)"/>
+
+      <g text-anchor="middle">
+        <text x="430" y="150" fill="#ece7d9" font-size="15">الجزائر</text>
+        <text x="610" y="140" fill="#ece7d9" font-size="15">ليبيا</text>
+        <text x="745" y="255" fill="#ff8a5c" font-size="16" font-weight="700">السودان</text>
+        <text x="290" y="300" fill="#ff8a5c" font-size="16" font-weight="700">مالي</text>
+        <text x="470" y="330" fill="#f0a94a" font-size="14">النيجر</text>
+        <text x="580" y="358" fill="#f0a94a" font-size="14">تشاد</text>
+        <text x="180" y="210" fill="#8a8472" font-size="11">موريتانيا</text>
+        <text x="370" y="410" fill="#8a8472" font-size="11">بوركينا فاسو</text>
+        <text x="820" y="180" fill="#8a8472" font-size="11">مصر</text>
+        <text x="660" y="300" fill="#8a8472" font-size="10">حوض بحيرة تشاد</text>
+      </g>
+
+      <!-- hotspots -->
+      <g>
+        <g transform="translate(745,250)"><polygon points="0,-9 2.6,-2.8 9,-2.8 3.6,1.6 5.6,8.4 0,4 -5.6,8.4 -3.6,1.6 -9,-2.8 -2.6,-2.8" fill="#e25b2a" stroke="#f1d57a" stroke-width=".6"/></g>
+        <text x="745" y="232" fill="#f0a060" font-size="9" text-anchor="middle">الأُبيّض/كردفان</text>
+        <g transform="translate(300,300)"><polygon points="0,-9 2.6,-2.8 9,-2.8 3.6,1.6 5.6,8.4 0,4 -5.6,8.4 -3.6,1.6 -9,-2.8 -2.6,-2.8" fill="#e25b2a" stroke="#f1d57a" stroke-width=".6"/></g>
+        <text x="300" y="282" fill="#f0a060" font-size="9" text-anchor="middle">شمال مالي/كيدال</text>
+        <g transform="translate(470,335)"><polygon points="0,-8 2.3,-2.5 8,-2.5 3.2,1.4 5,7.5 0,3.6 -5,7.5 -3.2,1.4 -8,-2.5 -2.3,-2.5" fill="#e25b2a" stroke="#f1d57a" stroke-width=".6"/></g>
+        <text x="470" y="352" fill="#f0a060" font-size="9" text-anchor="middle">نيامي/ليبتاكو</text>
+        <g transform="translate(625,150)"><polygon points="0,-8 2.3,-2.5 8,-2.5 3.2,1.4 5,7.5 0,3.6 -5,7.5 -3.2,1.4 -8,-2.5 -2.3,-2.5" fill="#e25b2a" stroke="#f1d57a" stroke-width=".6"/></g>
+        <text x="625" y="132" fill="#f0a060" font-size="9" text-anchor="middle">فزّان (جنوب ليبيا)</text>
+      </g>
+
+      <!-- corridors -->
+      <g stroke="#d4af37" stroke-width="1.8" fill="none" stroke-dasharray="6 5" opacity=".75">
+        <path d="M730 250 Q620 180 625 150" marker-end="url(#ar)"/>
+        <path d="M470 335 Q540 250 625 150" marker-end="url(#ar)"/>
+        <path d="M300 300 Q380 220 625 150" marker-end="url(#ar)"/>
+        <path d="M730 250 Q650 330 580 350" marker-end="url(#ar)"/>
+      </g>
+
+      <g font-size="11">
+        <polygon points="44,468 50,471 44,474" fill="#e25b2a" transform="translate(-8,-3)"/>
+        <text x="58" y="464" fill="#ece7d9">★ بؤرة نزاع نشطة</text>
+        <line x1="44" y1="480" x2="64" y2="480" stroke="#d4af37" stroke-width="1.8" stroke-dasharray="5 4"/>
+        <text x="72" y="484" fill="#ece7d9">ممر تهريب / امتداد تهديد</text>
+        <text x="480" y="486" fill="#8a8472" text-anchor="middle">تمثيل تخطيطي تحليلي — لا يعكس حدوداً رسمية</text>
+      </g>
+    </svg>
+    <div class="cap">شكل (1): خريطة تخطيطية للبؤر الساخنة ومسارات التهديد العابر للحدود خلال فترة الرصد.</div>
+  </div>
+
+  <h3 class="sub">المحرّكات البنيوية المشتركة</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>المحرّك</th><th>المظهر خلال الشهر</th><th>الدول الأكثر تأثراً</th></tr></thead>
+      <tbody>
+        <tr><td>الإرهاب العابر للحدود</td><td>تصعيد JNIM (مالي/النيجر) وداعش–الصحراء، وهجوم مطار نيامي، ونشاط بوكو حرام في حوض بحيرة تشاد</td><td>مالي، النيجر، تشاد</td></tr>
+        <tr><td>الهجرة غير النظامية</td><td>استمرار طرق وسط المتوسط عبر ليبيا والنيجر، وضغط النزوح الداخلي السوداني</td><td>ليبيا، النيجر، السودان</td></tr>
+        <tr><td>الجريمة المنظمة</td><td>تهريب الذهب والوقود والسلاح كاقتصاد موازٍ يموّل الفاعلين المسلحين</td><td>الكل — بكثافة في الساحل وليبيا</td></tr>
+        <tr><td>تهريب السلاح</td><td>تدفق فائض السلاح الليبي والسوداني نحو فاعلين غير دولتيين</td><td>ليبيا، السودان، تشاد، النيجر</td></tr>
+        <tr><td>النزاعات العابرة</td><td>امتداد حرب السودان نحو تشاد، ومثلث ليبتاكو-غورما، وحصار الوقود في مالي</td><td>السودان، تشاد، مالي، النيجر</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- composite chart -->
+  <div class="chart-card">
+    <div class="ct">مؤشر المخاطر الكلي حسب الدولة (تقدير مركّب 0–10)</div>
+    <div class="cs">أعلى = أخطر · متوسط عشرة مؤشرات مرجّحة لكل دولة</div>
+    <svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Sans Arabic'">
+      <line x1="60" y1="20" x2="60" y2="255" stroke="#3a3320"/>
+      <line x1="60" y1="255" x2="800" y2="255" stroke="#3a3320"/>
+      <g stroke="#262219" stroke-dasharray="3 4">
+        <line x1="60" y1="208" x2="800" y2="208"/><line x1="60" y1="161" x2="800" y2="161"/>
+        <line x1="60" y1="114" x2="800" y2="114"/><line x1="60" y1="67" x2="800" y2="67"/><line x1="60" y1="20" x2="800" y2="20"/>
+      </g>
+      <g fill="#8a8472" font-size="10" text-anchor="end">
+        <text x="52" y="259">0</text><text x="52" y="212">2</text><text x="52" y="165">4</text>
+        <text x="52" y="118">6</text><text x="52" y="71">8</text><text x="52" y="24">10</text>
+      </g>
+      <!-- bars: 23.5px/unit; baseline 255 -->
+      <g>
+        <rect x="95"  y="44.5" width="86" height="210.5" rx="3" fill="#c0392b"/>
+        <text x="138" y="38" fill="#ff8a5c" font-size="14" text-anchor="middle" font-weight="700">9.0</text>
+        <text x="138" y="273" fill="#ece7d9" font-size="12" text-anchor="middle">السودان</text>
+
+        <rect x="215" y="71" width="86" height="184" rx="3" fill="#d0432f"/>
+        <text x="258" y="64" fill="#ff8a5c" font-size="14" text-anchor="middle" font-weight="700">7.8</text>
+        <text x="258" y="273" fill="#ece7d9" font-size="12" text-anchor="middle">مالي</text>
+
+        <rect x="335" y="91" width="86" height="164" rx="3" fill="#e07b2d"/>
+        <text x="378" y="84" fill="#f0a94a" font-size="14" text-anchor="middle" font-weight="700">7.0</text>
+        <text x="378" y="273" fill="#ece7d9" font-size="12" text-anchor="middle">النيجر</text>
+
+        <rect x="455" y="105" width="86" height="150" rx="3" fill="#e07b2d"/>
+        <text x="498" y="98" fill="#f0a94a" font-size="14" text-anchor="middle" font-weight="700">6.4</text>
+        <text x="498" y="273" fill="#ece7d9" font-size="12" text-anchor="middle">ليبيا</text>
+
+        <rect x="575" y="115" width="86" height="140" rx="3" fill="#e07b2d"/>
+        <text x="618" y="108" fill="#f0a94a" font-size="14" text-anchor="middle" font-weight="700">6.0</text>
+        <text x="618" y="273" fill="#ece7d9" font-size="12" text-anchor="middle">تشاد</text>
+
+        <rect x="695" y="161" width="86" height="94" rx="3" fill="#dca42c"/>
+        <text x="738" y="154" fill="#f0c04a" font-size="14" text-anchor="middle" font-weight="700">4.2</text>
+        <text x="738" y="273" fill="#ece7d9" font-size="12" text-anchor="middle">الجزائر</text>
+      </g>
+    </svg>
+    <div class="legend">
+      <span><i style="background:#c0392b"></i>مرتفع جداً</span>
+      <span><i style="background:#d0432f"></i>مرتفع</span>
+      <span><i style="background:#e07b2d"></i>متوسط مرتفع</span>
+      <span><i style="background:#dca42c"></i>متوسط</span>
+    </div>
+  </div>
+
+  <div class="note"><strong>قراءة المحلّل:</strong> يتصدّر السودان سلّم الخطورة بوصفه النزاع المفتوح الوحيد عالي الحدّة، تليه مالي حيث يقترب التهديد من العاصمة عبر الحصار. تبقى الجزائر القاع النسبي للسلّم رغم تحديات الحدود وتآكل دورها الإقليمي.</div>
+
+  <!-- cross-border network infographic -->
+  <h3 class="sub">شبكة التهديد العابر للحدود — الفاعلون المسلحون</h3>
+  <div class="fig">
+    <svg viewBox="0 0 920 470" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Sans Arabic'">
+      <rect width="920" height="470" fill="#0c0e11"/>
+      <!-- edges -->
+      <g stroke-dasharray="5 4" opacity=".5">
+        <line x1="180" y1="150" x2="340" y2="110" stroke="#9c7c1e" stroke-width="1.2"/>
+        <line x1="180" y1="150" x2="150" y2="300" stroke="#9c7c1e" stroke-width="1.2"/>
+        <line x1="340" y1="110" x2="500" y2="150" stroke="#9c7c1e" stroke-width="1.2"/>
+        <line x1="500" y1="150" x2="640" y2="220" stroke="#9c7c1e" stroke-width="1.2"/>
+        <line x1="180" y1="150" x2="360" y2="290" stroke="#9c7c1e" stroke-width="1.2"/>
+        <line x1="360" y1="290" x2="640" y2="220" stroke="#9c7c1e" stroke-width="1.2"/>
+        <line x1="640" y1="220" x2="780" y2="160" stroke="#9c7c1e" stroke-width="1.2"/>
+      </g>
+      <!-- active conflict edge -->
+      <line x1="780" y1="160" x2="780" y2="320" stroke="#d0432f" stroke-width="2.4"/>
+      <text x="800" y="245" fill="#ff8a78" font-size="10">صراع مفتوح</text>
+
+      <!-- nodes -->
+      <g font-size="11" text-anchor="middle">
+        <g><circle cx="180" cy="150" r="46" fill="#0c0e11" stroke="#d0432f" stroke-width="2.4"/><text x="180" y="146" fill="#ece7d9" font-weight="700">JNIM</text><text x="180" y="161" fill="#bdb6a6" font-size="9">القاعدة</text></g>
+        <g><circle cx="340" cy="110" r="40" fill="#0c0e11" stroke="#d0432f" stroke-width="2.4"/><text x="340" y="108" fill="#ece7d9" font-weight="700" font-size="10">داعش</text><text x="340" y="122" fill="#bdb6a6" font-size="9">الصحراء</text></g>
+        <g><circle cx="500" cy="150" r="44" fill="#0c0e11" stroke="#d0432f" stroke-width="2.4"/><text x="500" y="146" fill="#ece7d9" font-size="10" font-weight="700">بوكو حرام</text><text x="500" y="161" fill="#bdb6a6" font-size="9">داعش غرب</text></g>
+        <g><circle cx="150" cy="300" r="40" fill="#0c0e11" stroke="#dca42c" stroke-width="2.4"/><text x="150" y="298" fill="#ece7d9" font-size="10" font-weight="700">أزواد</text><text x="150" y="312" fill="#bdb6a6" font-size="9">FLA</text></g>
+        <g><circle cx="360" cy="290" r="46" fill="#0c0e11" stroke="#8a6cd0" stroke-width="2.4"/><text x="360" y="287" fill="#ece7d9" font-size="10" font-weight="700">الفيلق</text><text x="360" y="301" fill="#bdb6a6" font-size="9">الأفريقي/روسيا</text></g>
+        <g><circle cx="640" cy="220" r="44" fill="#0c0e11" stroke="#4f9d8c" stroke-width="2.4"/><text x="640" y="217" fill="#ece7d9" font-size="10" font-weight="700">شبكات</text><text x="640" y="231" fill="#bdb6a6" font-size="9">التهريب</text></g>
+        <g><circle cx="780" cy="160" r="42" fill="#0c0e11" stroke="#e07b2d" stroke-width="2.4"/><text x="780" y="164" fill="#ece7d9" font-weight="700">SAF</text></g>
+        <g><circle cx="780" cy="320" r="42" fill="#0c0e11" stroke="#e07b2d" stroke-width="2.4"/><text x="780" y="324" fill="#ece7d9" font-weight="700">RSF</text></g>
+      </g>
+
+      <!-- legend -->
+      <g font-size="11">
+        <circle cx="60" cy="410" r="8" fill="#0c0e11" stroke="#d0432f" stroke-width="2"/><text x="76" y="414" fill="#ece7d9">جهادي / تنظيم متطرف</text>
+        <circle cx="260" cy="410" r="8" fill="#0c0e11" stroke="#e07b2d" stroke-width="2"/><text x="276" y="414" fill="#ece7d9">طرف دولة مقاتل</text>
+        <circle cx="430" cy="410" r="8" fill="#0c0e11" stroke="#dca42c" stroke-width="2"/><text x="446" y="414" fill="#ece7d9">انفصالي</text>
+        <circle cx="560" cy="410" r="8" fill="#0c0e11" stroke="#8a6cd0" stroke-width="2"/><text x="576" y="414" fill="#ece7d9">خارجي (روسيا)</text>
+        <circle cx="720" cy="410" r="8" fill="#0c0e11" stroke="#4f9d8c" stroke-width="2"/><text x="736" y="414" fill="#ece7d9">جريمة منظمة</text>
+        <line x1="60" y1="438" x2="84" y2="438" stroke="#9c7c1e" stroke-width="1.4" stroke-dasharray="5 4"/><text x="94" y="442" fill="#ece7d9">رابط تعاون/تنافس</text>
+        <line x1="280" y1="438" x2="304" y2="438" stroke="#d0432f" stroke-width="2.4"/><text x="314" y="442" fill="#ece7d9">صراع مسلح نشط</text>
+      </g>
+    </svg>
+    <div class="cap">شكل (2): شبكة الفاعلين المسلحين العابرين للحدود وروابط التعاون والتنافس والصراع.</div>
+  </div>
+</section>
+<!-- ============ LIBYA ============ -->
+<section class="block" id="libya">
+  <div class="country-hdr">
+    <div>
+      <div class="rank">القسم الثاني · 3 · قسم موسّع</div>
+      <h2>ليبيا</h2>
+      <div class="en">LIBYA</div>
+    </div>
+    <div class="score-badge" style="border-color:#b06a18;background:rgba(224,123,45,.08)">
+      <div class="n" style="color:#f0a94a">6.4</div>
+      <div class="t">مؤشر مركّب · متوسط مرتفع</div>
+    </div>
+  </div>
+
+  <p class="lead">تبقى ليبيا مركز الثقل الجيوسياسي لشمال أفريقيا: دولة منقسمة مؤسسياً بين غربٍ وشرق، تتقاطع فوقها مصالح تركيا وروسيا ومصر والجزائر والاتحاد الأوروبي والولايات المتحدة، وتشكّل بوابة الهجرة نحو المتوسط وخزّان سلاح يغذّي الساحل. شهدت فترة الرصد مفارقة لافتة: زخم سياسي أممي وأعلى إيرادات نفطية منذ اثني عشر عاماً، مقابل هشاشة أمنية متجددة في طرابلس.</p>
+
+  <h3 class="sub">أبرز الأحداث خلال الشهر</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th style="width:130px">التاريخ</th><th>الحدث الأمني أو السياسي</th></tr></thead>
+      <tbody>
+        <tr><td class="date-c">مايو–يونيو</td><td>تحرّك دبلوماسي مكثّف للبعثة الأممية (UNSMIL) لإعادة إطلاق المسار السياسي عبر خارطة طريق تربط توحيد المؤسسة التنفيذية بقاعدة انتخابية، مع مشاورات حول هيكلة السلطة. <span class="verify">تفاصيل المسار قيد التطور</span></td></tr>
+        <tr><td class="date-c">مايو</td><td>توتر أمني واشتباكات متقطّعة بين تشكيلات مسلحة في طرابلس ومحيطها على خلفية إعادة تموضع القوة، مع هدوء حذر تخلّله انتشار مكثّف. <span class="verify">يتطلب تحققاً ميدانياً</span></td></tr>
+        <tr><td class="date-c">يونيو</td><td>بلوغ الإيرادات النفطية أعلى مستوى منذ نحو اثني عشر عاماً مع تعافي الإنتاج، في ظل استمرار التجاذب حول إدارة المصرف المركزي وتوزيع الموارد. <span class="verify">أرقام NOC قيد التأكيد</span></td></tr>
+        <tr><td class="date-c">طوال الشهر</td><td>نشاط على المحور الجنوبي (فزّان) وعلى الحدود مع تشاد والنيجر والسودان مرتبط بشبكات التهريب وتدفقات مسلّحة وهجرة.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">الاتجاهات الرئيسية</h3>
+  <h4 class="sub2">الأمن</h4>
+  <p>يظل المشهد محكوماً بتوازن هشّ بين تحالفات مسلحة في الغرب (طرابلس ومصراتة والزاوية) وقوة موحّدة نسبياً في الشرق تحت القيادة العامة. غياب احتكار الدولة للسلاح يُبقي خطر الانزلاق إلى مواجهة محدودة قائماً في العاصمة. أما الجنوب (فزّان) فيمثّل الحلقة الأضعف: فراغ أمني وممرّ للسلاح والمقاتلين والمهاجرين بين الساحل وشمال أفريقيا. تهديد التنظيمات المتطرفة أقل حدّة من ذروته لكنه قابل للتمدّد في الفراغ الجنوبي.</p>
+  <h4 class="sub2">السياسة والحوكمة</h4>
+  <p>الانقسام المؤسسي بين مجلس النواب (طبرق) والمجلس الأعلى للدولة وحكومة الوحدة الوطنية (الدبيبة) والحكومة المكلّفة من البرلمان (حمّاد) هو جوهر الأزمة. كل ملف تقني (المصرف، الميزانية، النفط) يتحوّل إلى ورقة صراع. الزخم الأممي الجديد يحاول دمج المسارات، لكن قدرته على فرض الحلول محدودة بإرادة الفاعلين ورُعاتهم الخارجيين، وتبقى احتمالات انتخابات شاملة قريبة ضعيفة.</p>
+  <h4 class="sub2">الاقتصاد</h4>
+  <p>اقتصاد ريعي بامتياز: تعافي إنتاج النفط وبلوغ الإيرادات ذروة اثني عشر عاماً يمنحان مساحة مالية، لكن غياب موازنة موحّدة وتعدّد جهات الإنفاق يغذّيان الفساد ويضعفان الحوكمة. أزمة المصرف المركزي والسيولة وسعر الصرف تبقى نقطة ضغط متكررة؛ وأي اضطراب في إدارة النفط ينعكس مباشرة على الاستقرار الاجتماعي.</p>
+  <h4 class="sub2">المجتمع</h4>
+  <p>أوضاع إنسانية أقل حدّة من دول الجوار لكنها مثقلة بملف الهجرة والنزوح. احتجاجات خدمية ومعيشية متقطعة دون حراك وطني موحّد. ليبيا محور في طرق الهجرة نحو المتوسط، ما يجعل ملفها ورقة في علاقتها بالاتحاد الأوروبي.</p>
+
+  <h3 class="sub">الملف الدولي والتنافس على النفوذ</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>الطرف</th><th>المصلحة الأساسية</th><th>أدوات النفوذ</th></tr></thead>
+      <tbody>
+        <tr><td>الأمم المتحدة (UNSMIL)</td><td>مسار سياسي يفضي لانتخابات وتوحيد المؤسسات</td><td>الوساطة والشرعية الدولية</td></tr>
+        <tr><td>تركيا</td><td>نفوذ في الغرب واتفاقيات بحرية/أمنية</td><td>دعم عسكري وتدريب واستثمارات</td></tr>
+        <tr><td>روسيا (الفيلق الأفريقي)</td><td>موطئ قدم متوسطي وامتداد نحو الساحل</td><td>وجود أمني في الشرق والجنوب</td></tr>
+        <tr><td>مصر</td><td>أمن الحدود الغربية ونفوذ في الشرق</td><td>علاقات مع الشرق ووساطة</td></tr>
+        <tr><td>الجزائر</td><td>استقرار الجوار ومنع الامتداد الإرهابي</td><td>دبلوماسية الجوار والوساطة</td></tr>
+        <tr><td>الاتحاد الأوروبي</td><td>ضبط الهجرة وأمن الطاقة</td><td>تمويل واتفاقات هجرة</td></tr>
+        <tr><td>الولايات المتحدة</td><td>مكافحة الإرهاب وموازنة النفوذ الروسي</td><td>دبلوماسية واستخبارات</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">الفاعلون الرئيسيون</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>الفاعل</th><th>الدور / الوضع</th><th class="c">النفوذ</th><th>الأهداف</th><th class="c">التأثير</th></tr></thead>
+      <tbody>
+        <tr><td>حكومة الوحدة الوطنية (الدبيبة)</td><td>سلطة تنفيذية في الغرب معترف بها أممياً</td><td class="c"><div class="inf"><span style="width:78%"></span></div></td><td>البقاء وضبط طرابلس وإدارة الإيرادات</td><td class="c">مرتفع</td></tr>
+        <tr><td>الحكومة المكلّفة من البرلمان (حمّاد)</td><td>سلطة موازية مدعومة شرقاً</td><td class="c"><div class="inf"><span style="width:70%"></span></div></td><td>انتزاع الشرعية وتوسيع السيطرة الاقتصادية</td><td class="c">مرتفع</td></tr>
+        <tr><td>القيادة العامة (الشرق)</td><td>قوة عسكرية مهيمنة شرقاً وجنوباً</td><td class="c"><div class="inf"><span style="width:80%"></span></div></td><td>تثبيت النفوذ والسيطرة على الجنوب والموارد</td><td class="c">مرتفع</td></tr>
+        <tr><td>التشكيلات المسلحة (الغرب)</td><td>سيطرة فعلية على أحياء ومرافق</td><td class="c"><div class="inf"><span style="width:62%"></span></div></td><td>الموارد والمناطق والامتيازات الأمنية</td><td class="c">مرتفع</td></tr>
+        <tr><td>المؤسسة الوطنية للنفط / المصرف المركزي</td><td>عقدة الإيرادات والمالية</td><td class="c"><div class="inf"><span style="width:72%"></span></div></td><td>إدارة الموارد وتفادي الانهيار المالي</td><td class="c">مرتفع</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">مؤشرات المخاطر (عشرة مؤشرات)</h3>
+  <div id="dash-libya"></div>
+  <p class="muted" style="font-size:13px">الاتجاه مقارنة بالشهر السابق: ▲ تدهور · ▼ تحسّن · ■ مستقر. المؤشر الكلي المركّب: <strong>6.4/10</strong> — المحرّك الأساسي سياسي–حدودي لا قتالي مباشر.</p>
+
+  <h3 class="sub">التقدير الاستخباراتي</h3>
+  <div class="assess">
+    <div class="box what"><h4>ماذا حدث؟</h4><p>زخم سياسي أممي لإعادة إطلاق المسار تزامن مع أعلى إيرادات نفطية منذ اثني عشر عاماً، مقابل توتر أمني متجدد في طرابلس واستمرار رخاوة الجنوب.</p></div>
+    <div class="box why"><h4>لماذا يهمّ؟</h4><p>ليبيا عقدة الهجرة والطاقة والسلاح في الإقليم؛ أي اهتزاز فيها يتردّد صداه في المتوسط والساحل معاً، فيما يجعلها التنافس التركي–الروسي ساحة جيوسياسية بامتياز.</p></div>
+    <div class="box imp"><h4>التداعيات</h4><p>الزخم السياسي فرصة هشّة قد يُجهضها التوتر الأمني؛ وإطالة الانقسام تُبقي الجنوب فراغاً يغذّي الساحل وتؤجّل أي استقرار مالي مستدام.</p></div>
+  </div>
+
+  <h3 class="sub">التوقعات (30 يوماً)</h3>
+  <div class="scen">
+    <div class="s likely"><span class="tag">المرجّح</span><div class="prob">55%</div><div class="probbar"><span style="width:55%"></span></div><p>استمرار الجمود المُدار مع تحرّك أممي بطيء وتوترات أمنية موضعية متكررة دون انزلاق شامل.</p></div>
+    <div class="s best"><span class="tag">المتفائل</span><div class="prob">20%</div><div class="probbar"><span style="width:20%"></span></div><p>تثبيت خارطة طريق وآلية موحّدة للإنفاق وخفض التصعيد في الغرب مع توحيد مالي جزئي.</p></div>
+    <div class="s worst"><span class="tag">المتشائم</span><div class="prob">25%</div><div class="probbar"><span style="width:25%"></span></div><p>اشتباكات واسعة في طرابلس أو إغلاق نفطي يعمّق الأزمة المالية ويعيد خطر التصعيد الشامل.</p></div>
+  </div>
+
+  <h3 class="sub">المصادر المستخدمة</h3>
+  <ol class="sources">
+    <li><span class="num">1</span> بعثة الأمم المتحدة للدعم في ليبيا (UNSMIL) — إحاطات ومسار سياسي، 2026. <a href="https://unsmil.unmissions.org">unsmil.unmissions.org</a></li>
+    <li><span class="num">2</span> Reuters — Libya political process &amp; oil revenues, <span class="src-date">يونيو 2026</span>. <a href="https://www.reuters.com/world/africa">reuters.com/world/africa</a></li>
+    <li><span class="num">3</span> المؤسسة الوطنية للنفط (NOC) — بيانات الإنتاج والإيرادات، 2026. <span class="verify">قيد التأكيد</span></li>
+    <li><span class="num">4</span> International Crisis Group — Libya, 2026. <a href="https://www.crisisgroup.org/middle-east-north-africa/north-africa/libya">crisisgroup.org</a></li>
+    <li><span class="num">5</span> ACLED — Libya conflict data, 2026. <a href="https://acleddata.com">acleddata.com</a></li>
+  </ol>
+</section>
+<!-- ============ SUDAN ============ -->
+<section class="block" id="sudan">
+  <div class="country-hdr">
+    <div><div class="rank">القسم الثاني · 4</div><h2>السودان</h2><div class="en">SUDAN</div></div>
+    <div class="score-badge" style="border-color:#7d241b;background:rgba(208,67,47,.08)">
+      <div class="n" style="color:#ff6f5e">9.0</div><div class="t">مؤشر مركّب · مرتفع جداً</div>
+    </div>
+  </div>
+  <p class="lead">يتصدّر السودان سلّم الخطورة الإقليمي بوصفه النزاع المفتوح الوحيد عالي الحدّة بين الجيش السوداني (SAF) وقوات الدعم السريع (RSF). شهدت فترة الرصد حشداً لهجوم متعدد المحاور على الأُبيّض وحملة مسيّرات استمرت نحو عشرة أيام، وسط أكبر أزمة نزوح عالمياً ومجاعة موضعية وتداعيات تمتد نحو تشاد وجنوب السودان.</p>
+
+  <h3 class="sub">أبرز الأحداث خلال الشهر</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th style="width:130px">التاريخ</th><th>الحدث الأمني أو السياسي</th></tr></thead>
+    <tbody>
+      <tr><td class="date-c">يونيو</td><td>حشد قوات الدعم السريع لهجوم متعدد المحاور على مدينة الأُبيّض (شمال كردفان) بوصفها بوابة نحو وسط السودان. <span class="verify">تطور ميداني متغيّر</span></td></tr>
+      <tr><td class="date-c">مايو–يونيو</td><td>حملة طائرات مسيّرة استمرت نحو عشرة أيام استهدفت بنى مدنية وخدمية (كهرباء، مياه، مطارات) في مناطق سيطرة الجيش. <span class="verify">حصيلة الأضرار متباينة المصادر</span></td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>استمرار المأساة الإنسانية: ملايين النازحين واللاجئين وانعدام أمن غذائي حاد في دارفور وكردفان مع تصنيفات مجاعة موضعية. <span class="verify">تقديرات OCHA/IPC</span></td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>تعثّر مساعي الوساطة الإقليمية والدولية دون اختراق نحو وقف إطلاق نار مستدام، وتعدد المبادرات المتنافسة.</td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>تداعيات حدودية على تشاد وجنوب السودان عبر تدفق اللاجئين والسلاح والمقاتلين.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">الاتجاهات الرئيسية</h3>
+  <h4 class="sub2">الأمن</h4>
+  <p>حرب استنزاف متنقّلة متعددة الجبهات مع تطبيع ضربات المسيّرات وتبادل القصف على مناطق مدنية. انهيار شبه كامل لاحتكار الدولة للعنف وبروز فصائل أخرى تعقّد المشهد. استهداف البنى المدنية أصبح نمطاً يفاقم الكارثة ويوثّق انتهاكات جسيمة.</p>
+  <h4 class="sub2">السياسة والحوكمة</h4>
+  <p>غياب سلطة مدنية فاعلة واستمرار الصراع كحرب نفوذ بين مركزَي قوة عسكريين دون أفق تسوية. التشظّي يهدّد بتحوّل السودان إلى مناطق نفوذ متعددة، والوساطات الخارجية متعددة ومتنافسة ما يضعف فعاليتها.</p>
+  <h4 class="sub2">الاقتصاد</h4>
+  <p>انهيار شبه كامل: تضخّم مرتفع وشلل في المؤسسات الحيوية وتعطّل النفط والبنى التحتية. اقتصاد الحرب وشبكات الذهب والتهريب تموّل أطراف النزاع وتطيل أمده، ما يضاعف معاناة المدنيين ويغذّي النزوح.</p>
+  <h4 class="sub2">المجتمع</h4>
+  <p>أكبر أزمة نزوح عالمياً وضغط لجوء هائل على دول الجوار. مجاعة موضعية في مناطق متعددة وانهيار للخدمات الصحية. الحراك المدني مكبوت تحت وطأة الحرب والنزوح.</p>
+
+  <h3 class="sub">الفاعلون الرئيسيون</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>الفاعل</th><th>الدور / الوضع</th><th class="c">النفوذ</th><th>الأهداف</th><th class="c">التأثير</th></tr></thead>
+    <tbody>
+      <tr><td>الجيش السوداني (SAF) — البرهان</td><td>القوة الحكومية الرئيسية</td><td class="c"><div class="inf"><span style="width:75%"></span></div></td><td>حسم عسكري والحفاظ على الدولة</td><td class="c">مرتفع</td></tr>
+      <tr><td>قوات الدعم السريع (RSF) — حميدتي</td><td>قوة منافسة تسيطر على مناطق واسعة</td><td class="c"><div class="inf"><span style="width:72%"></span></div></td><td>توسيع النفوذ واستقلال القرار والموارد</td><td class="c">مرتفع</td></tr>
+      <tr><td>الحركات المسلحة (دارفور/النيل الأزرق)</td><td>فصائل تسيطر على أجزاء</td><td class="c"><div class="inf"><span style="width:45%"></span></div></td><td>مطالب سياسية/عدالة تاريخية ونفوذ محلي</td><td class="c">متوسط</td></tr>
+      <tr><td>الوسطاء (الاتحاد الأفريقي/أممي/إقليمي)</td><td>وساطة وضغط وإغاثة</td><td class="c"><div class="inf"><span style="width:40%"></span></div></td><td>وقف النار وحماية المدنيين</td><td class="c">متوسط</td></tr>
+      <tr><td>الداعمون الخارجيون للطرفين</td><td>تمويل وتسليح</td><td class="c"><div class="inf"><span style="width:60%"></span></div></td><td>مصالح جيوستراتيجية وموارد</td><td class="c">مرتفع</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">مؤشرات المخاطر (عشرة مؤشرات)</h3>
+  <div id="dash-sudan"></div>
+  <p class="muted" style="font-size:13px">المؤشر الكلي المركّب: <strong>9.0/10</strong> — الأعلى إقليمياً. الأوضاع الإنسانية عند الحدّ الأقصى (10/10).</p>
+
+  <h3 class="sub">التقدير الاستخباراتي</h3>
+  <div class="assess">
+    <div class="box what"><h4>ماذا حدث؟</h4><p>حشد RSF لهجوم على الأُبيّض وحملة مسيّرات ممتدة على البنى المدنية، مع تعمّق الكارثة الإنسانية وتعثّر الوساطات.</p></div>
+    <div class="box why"><h4>لماذا يهمّ؟</h4><p>السودان بؤرة عدم الاستقرار الأخطر وأكثرها تأثيراً على الجوار؛ حربه تنتج أكبر أزمة نزوح وتغذّي تدفق السلاح والمرتزقة وتفتح تنافساً على البحر الأحمر.</p></div>
+    <div class="box imp"><h4>التداعيات</h4><p>سقوط الأُبيّض يفتح الطريق نحو الوسط ويطلق نزوحاً كبيراً؛ واستمرار الحرب يرسّخ التقسيم الفعلي ومجاعة واسعة وضغطاً على تشاد ومصر.</p></div>
+  </div>
+
+  <h3 class="sub">التوقعات (30 يوماً)</h3>
+  <div class="scen">
+    <div class="s likely"><span class="tag">المرجّح</span><div class="prob">60%</div><div class="probbar"><span style="width:60%"></span></div><p>استمرار حرب الاستنزاف متعددة الجبهات مع معركة كرّ وفرّ حول الأُبيّض وتدهور إنساني إضافي.</p></div>
+    <div class="s best"><span class="tag">المتفائل</span><div class="prob">10%</div><div class="probbar"><span style="width:10%"></span></div><p>هدنة إنسانية موضعية بضغط دولي تفتح ممرات إغاثة وتخفّف الكارثة مؤقتاً.</p></div>
+    <div class="s worst"><span class="tag">المتشائم</span><div class="prob">30%</div><div class="probbar"><span style="width:30%"></span></div><p>سقوط الأُبيّض وتمدد نحو الوسط مع موجة نزوح كبرى جديدة ودفع نحو تقسيم فعلي.</p></div>
+  </div>
+
+  <h3 class="sub">المصادر المستخدمة</h3>
+  <ol class="sources">
+    <li><span class="num">1</span> UN OCHA — Sudan situation reports, <span class="src-date">2026</span>. <a href="https://www.unocha.org/sudan">unocha.org/sudan</a></li>
+    <li><span class="num">2</span> ACLED — Sudan conflict data, <span class="src-date">2026</span>. <a href="https://acleddata.com">acleddata.com</a></li>
+    <li><span class="num">3</span> Reuters / AFP — El Obeid &amp; drone campaign, <span class="src-date">يونيو 2026</span>. <a href="https://www.reuters.com/world/africa">reuters.com/world/africa</a></li>
+    <li><span class="num">4</span> UNHCR — displacement &amp; refugees, <span class="src-date">2026</span>. <a href="https://data.unhcr.org">data.unhcr.org</a></li>
+    <li><span class="num">5</span> International Crisis Group — Sudan, <span class="src-date">2026</span>. <a href="https://www.crisisgroup.org/africa/horn-africa/sudan">crisisgroup.org</a></li>
+  </ol>
+</section>
+
+<!-- ============ MALI ============ -->
+<section class="block" id="mali">
+  <div class="country-hdr">
+    <div><div class="rank">القسم الثاني · 5</div><h2>مالي</h2><div class="en">MALI</div></div>
+    <div class="score-badge" style="border-color:#8a3a18;background:rgba(208,67,47,.06)">
+      <div class="n" style="color:#ff8a5c">7.8</div><div class="t">مؤشر مركّب · مرتفع</div>
+    </div>
+  </div>
+  <p class="lead">تتدهور البيئة الأمنية في مالي بوتيرة متسارعة مع تصعيد جماعة نصرة الإسلام والمسلمين (JNIM) عملياتها وفرضها حصاراً على إمدادات الوقود ومحاور غرب البلاد (كايس) ومحيط العاصمة، في ظل حكم عسكري انتقالي وحضور الفيلق الأفريقي الروسي. تتحوّل مالي إلى مركز زلزال يهدد كامل الساحل الأوسط.</p>
+
+  <h3 class="sub">أبرز الأحداث خلال الشهر</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th style="width:130px">التاريخ</th><th>الحدث الأمني أو السياسي</th></tr></thead>
+    <tbody>
+      <tr><td class="date-c">مايو–يونيو</td><td>تصعيد JNIM عملياتها وفرض حصار/تضييق على إمدادات الوقود ومحاور حيوية، في تحوّل نحو «اقتصاد الحصار» كسلاح استراتيجي. <span class="verify">نطاق الحصار قيد التقييم</span></td></tr>
+      <tr><td class="date-c">يونيو</td><td>ضغط متصاعد على محور كايس غرباً (شريان الإمداد من السنغال) ومحيط باماكو، مع هجمات على مواقع عسكرية. <span class="verify">حصيلة الهجمات متباينة</span></td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>استمرار سيطرة الجماعات المسلحة وفصائل أزواد (FLA) على مساحات شمالاً ونواحي كيدال، وتنسيق ميداني متقطّع.</td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>استمرار حضور الفيلق الأفريقي الروسي كعامل في معادلة الأمن دون وقف التدهور، وتماسك محور دول الساحل (AES).</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">الاتجاهات الرئيسية</h3>
+  <h4 class="sub2">الأمن</h4>
+  <p>تصعيد كمّي ونوعي لهجمات JNIM واتساع رقعة عملياتها، مع تحوّل حصار الوقود إلى أداة ضغط استراتيجي تخنق المدن وتضرب الاقتصاد. JNIM باتت القوة المسلحة الأكثر فاعلية في الساحل، وحضور المرتزقة الروس لم يوقف التدهور.</p>
+  <h4 class="sub2">السياسة والحوكمة</h4>
+  <p>تمسّك المجلس العسكري (غويتا) بالسلطة وتأجيل الانتقال المدني وتضييق على المعارضة. تفكك اتفاق السلام مع الفصائل الطارقية أعاد إشعال الشمال، والسلطة منشغلة بالبقاء وسط أزمة خانقة أكثر من بناء حكم مدني.</p>
+  <h4 class="sub2">الاقتصاد</h4>
+  <p>اقتصاد منهك بفعل الصراع والعقوبات السابقة وانقطاع محاور التجارة. حصار الوقود يهدّد الأمن الغذائي والطاقي ويضغط على المدن، مع اعتماد على الذهب والزراعة وتعرّض شديد للصدمات.</p>
+  <h4 class="sub2">المجتمع</h4>
+  <p>نزوح متصاعد وأوضاع إنسانية متدهورة في الشمال والوسط ونقص في المساعدات. تضييق على المجال المدني يكبح أي حراك واسع.</p>
+
+  <h3 class="sub">الفاعلون الرئيسيون</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>الفاعل</th><th>الدور / الوضع</th><th class="c">النفوذ</th><th>الأهداف</th><th class="c">التأثير</th></tr></thead>
+    <tbody>
+      <tr><td>الحكومة العسكرية الانتقالية (غويتا)</td><td>السلطة الحاكمة بعد الانقلابات</td><td class="c"><div class="inf"><span style="width:55%"></span></div></td><td>البقاء ومواجهة الضغط وتأجيل الانتخابات</td><td class="c">مرتفع</td></tr>
+      <tr><td>جماعة نصرة الإسلام والمسلمين (JNIM)</td><td>تنظيم متطرف (صلة بالقاعدة) يقود الهجمات</td><td class="c"><div class="inf"><span style="width:85%"></span></div></td><td>بسط السيطرة تدريجياً عبر الحصار والخنق</td><td class="c">مرتفع</td></tr>
+      <tr><td>جبهة تحرير أزواد (FLA)</td><td>قوات انفصالية طارقية</td><td class="c"><div class="inf"><span style="width:58%"></span></div></td><td>كيان مستقل شمالاً واستغلال ضعف الدولة</td><td class="c">مرتفع</td></tr>
+      <tr><td>الفيلق الأفريقي (روسيا)</td><td>دعم قتالي للحكومة</td><td class="c"><div class="inf"><span style="width:52%"></span></div></td><td>ترسيخ النفوذ الروسي والموارد</td><td class="c">متوسط–مرتفع</td></tr>
+      <tr><td>محور دول الساحل (AES)</td><td>تكتل إقليمي للمجالس العسكرية</td><td class="c"><div class="inf"><span style="width:50%"></span></div></td><td>سيادة جماعية بعيداً عن الغرب وإيكواس</td><td class="c">متوسط</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">مؤشرات المخاطر (عشرة مؤشرات)</h3>
+  <div id="dash-mali"></div>
+  <p class="muted" style="font-size:13px">المؤشر الكلي المركّب: <strong>7.8/10</strong> — الأخطر بعد السودان. التهديد الإرهابي عند 9/10.</p>
+
+  <h3 class="sub">التقدير الاستخباراتي</h3>
+  <div class="assess">
+    <div class="box what"><h4>ماذا حدث؟</h4><p>تصعيد JNIM عملياتها وفرض حصار للوقود وضغط على كايس ومحيط باماكو، مع استمرار التنسيق الإرهابي–الانفصالي شمالاً.</p></div>
+    <div class="box why"><h4>لماذا يهمّ؟</h4><p>مالي قلب أزمة الساحل ونموذج يُحتذى لبقية المجالس العسكرية؛ حصار العاصمة يعيد تعريف موازين القوة ويصدّر عدم الاستقرار للجوار.</p></div>
+    <div class="box imp"><h4>التداعيات</h4><p>اشتداد الحصار يخنق الاقتصاد ويضغط على باماكو، ويعمّق هشاشة محور الساحل، ويختبر جدوى النموذج العسكري–الروسي.</p></div>
+  </div>
+
+  <h3 class="sub">التوقعات (30 يوماً)</h3>
+  <div class="scen">
+    <div class="s likely"><span class="tag">المرجّح</span><div class="prob">58%</div><div class="probbar"><span style="width:58%"></span></div><p>اشتداد حصار الوقود وتصاعد الهجمات على المحاور مع ضغط متقطّع على محيط العاصمة دون سقوطها.</p></div>
+    <div class="s best"><span class="tag">المتفائل</span><div class="prob">15%</div><div class="probbar"><span style="width:15%"></span></div><p>تأمين جزئي لمحور كايس بدعم المرتزقة وتثبيت خطوط الإمداد مؤقتاً.</p></div>
+    <div class="s worst"><span class="tag">المتشائم</span><div class="prob">27%</div><div class="probbar"><span style="width:27%"></span></div><p>خنق إمداد العاصمة وأزمة وقود حادة مع توسّع السيطرة الإرهابية–الانفصالية.</p></div>
+  </div>
+
+  <h3 class="sub">المصادر المستخدمة</h3>
+  <ol class="sources">
+    <li><span class="num">1</span> ACLED — Mali / JNIM activity, <span class="src-date">2026</span>. <a href="https://acleddata.com">acleddata.com</a></li>
+    <li><span class="num">2</span> Reuters / AFP — JNIM fuel blockade &amp; Kayes, <span class="src-date">يونيو 2026</span>. <a href="https://www.reuters.com/world/africa">reuters.com/world/africa</a></li>
+    <li><span class="num">3</span> International Crisis Group — Mali / Sahel, <span class="src-date">2026</span>. <a href="https://www.crisisgroup.org/africa/sahel/mali">crisisgroup.org</a></li>
+    <li><span class="num">4</span> ISS Africa — Sahel jihadist trends, <span class="src-date">2026</span>. <a href="https://issafrica.org">issafrica.org</a></li>
+  </ol>
+</section>
+<!-- ============ NIGER ============ -->
+<section class="block" id="niger">
+  <div class="country-hdr">
+    <div><div class="rank">القسم الثاني · 6</div><h2>النيجر</h2><div class="en">NIGER</div></div>
+    <div class="score-badge" style="border-color:#b06a18;background:rgba(224,123,45,.08)">
+      <div class="n" style="color:#f0a94a">7.0</div><div class="t">مؤشر مركّب · متوسط مرتفع</div>
+    </div>
+  </div>
+  <p class="lead">عزّز المجلس العسكري الانتقالي (CNSP) سيادته منذ انقلاب 2023، رافعاً خطاب «حالة الحرب». شهدت فترة الرصد هجوماً لافتاً على مطار نيامي الدولي في 18 يونيو ضرب قلب العاصمة، فيما يبقى تهديد JNIM وداعش–الصحراء مرتفعاً على الحدود مع مالي ونيجيريا، مع إعادة تموضع للتحالفات بعيداً عن الغرب.</p>
+
+  <h3 class="sub">أبرز الأحداث خلال الشهر</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th style="width:130px">التاريخ</th><th>الحدث الأمني أو السياسي</th></tr></thead>
+    <tbody>
+      <tr><td class="date-c">18 يونيو</td><td>هجوم على مطار نيامي الدولي أسفر عن سقوط قتلى، في ضربة رمزية لقلب العاصمة وسط خطاب «حالة الحرب». <span class="verify">حصيلة أولية متباينة</span></td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>استمرار ترسيخ المجلس العسكري سيادته وتنويع تحالفاته العسكرية ومصادر التسليح بعيداً عن الشركاء التقليديين.</td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>تهديد متواصل من JNIM وداعش–الصحراء على الحدود الغربية (مالي) والجنوبية (نيجيريا/حوض بحيرة تشاد).</td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>ضغط دولي للعودة إلى الحكم المدني مقابل خطاب سيادي حازم وتعميق العلاقة بمحور دول الساحل.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">الاتجاهات الرئيسية</h3>
+  <h4 class="sub2">الأمن</h4>
+  <p>سيطرة داخلية مترسّخة لكن التهديد الجهادي مرتفع على الحدود، وقد بلغ قلب العاصمة عبر هجوم المطار. إعادة تشكيل التحالفات وتنويع التسليح يغيّران بنية الدعم الأمني، والمناطق الحدودية النائية تبقى الأضعف.</p>
+  <h4 class="sub2">السياسة والحوكمة</h4>
+  <p>سلطة عسكرية تؤكد سيادتها وتنفي «المؤامرات الاستعمارية»، بشرعية قائمة على خطاب مكافحة الإرهاب واستعادة القرار الوطني. القبضة القوية تثير قلق المجتمع المدني والمانحين بشأن الحوكمة وحقوق الإنسان.</p>
+  <h4 class="sub2">الاقتصاد</h4>
+  <p>اقتصاد هشّ يعوّل على اليورانيوم والزراعة، يعيد توجيه عقود الموارد نحو شركاء جدد، ويبقى عرضة للصدمات والعزلة عن بعض الشركاء.</p>
+  <h4 class="sub2">المجتمع</h4>
+  <p>أوضاع متوترة بفعل العنف والنزوح الحدودي. خطاب سيادي يحظى بقبول يكبح الحراك، مع مخاطر إنسانية في مناطق العمليات.</p>
+
+  <h3 class="sub">الفاعلون الرئيسيون</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>الفاعل</th><th>الدور / الوضع</th><th class="c">النفوذ</th><th>الأهداف</th><th class="c">التأثير</th></tr></thead>
+    <tbody>
+      <tr><td>المجلس العسكري الانتقالي (CNSP)</td><td>الجهة الحاكمة الفعلية</td><td class="c"><div class="inf"><span style="width:68%"></span></div></td><td>ترسيخ السلطة وتنويع التحالفات ومواجهة الإرهاب</td><td class="c">مرتفع</td></tr>
+      <tr><td>القيادة العسكرية</td><td>مهندس خطة «حالة حرب»</td><td class="c"><div class="inf"><span style="width:64%"></span></div></td><td>تأكيد القوة السيادية وكبح النفوذ الأجنبي</td><td class="c">مرتفع</td></tr>
+      <tr><td>JNIM</td><td>تنظيم متطرف نشط على الحدود</td><td class="c"><div class="inf"><span style="width:72%"></span></div></td><td>توسيع النفوذ واستهداف الدولة والعاصمة</td><td class="c">مرتفع</td></tr>
+      <tr><td>داعش في الصحراء (ISGS)</td><td>تنظيم متفرّع يهاجم قوات الأمن</td><td class="c"><div class="inf"><span style="width:62%"></span></div></td><td>استغلال الفوضى والتجنيد الحدودي</td><td class="c">متوسط–مرتفع</td></tr>
+      <tr><td>الدول المجاورة/المجتمع الدولي</td><td>دعم متذبذب وضغط للعودة المدنية</td><td class="c"><div class="inf"><span style="width:42%"></span></div></td><td>مكافحة الإرهاب والاستقرار والنفوذ</td><td class="c">متوسط</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">مؤشرات المخاطر (عشرة مؤشرات)</h3>
+  <div id="dash-niger"></div>
+  <p class="muted" style="font-size:13px">المؤشر الكلي المركّب: <strong>7.0/10</strong> — هجوم مطار نيامي رفع تقييم الأمن والإرهاب.</p>
+
+  <h3 class="sub">التقدير الاستخباراتي</h3>
+  <div class="assess">
+    <div class="box what"><h4>ماذا حدث؟</h4><p>هجوم على مطار نيامي ضرب قلب العاصمة، مع ترسيخ السيادة العسكرية وتنويع التحالفات بعيداً عن الغرب.</p></div>
+    <div class="box why"><h4>لماذا يهمّ؟</h4><p>النيجر محور إعادة تشكّل النفوذ في الساحل وملف الهجرة ومكافحة الإرهاب؛ ضرب العاصمة يكسر صورة «استعادة السيادة الأمنية».</p></div>
+    <div class="box imp"><h4>التداعيات</h4><p>بقاء السلطة العسكرية مترسّخاً قصير المدى، لكن التهديد الجهادي الحدودي وإعادة الهيكلة يبقيان البيئة الأمنية متقلبة.</p></div>
+  </div>
+
+  <h3 class="sub">التوقعات (30 يوماً)</h3>
+  <div class="scen">
+    <div class="s likely"><span class="tag">المرجّح</span><div class="prob">60%</div><div class="probbar"><span style="width:60%"></span></div><p>احتواء نسبي مع هجمات حدودية متقطّعة ومحاولات نوعية في العمق، وثبات القبضة السياسية.</p></div>
+    <div class="s best"><span class="tag">المتفائل</span><div class="prob">20%</div><div class="probbar"><span style="width:20%"></span></div><p>تحسّن أمني عبر تحالفات جديدة فعّالة وتعافٍ مدعوم بإيرادات اليورانيوم.</p></div>
+    <div class="s worst"><span class="tag">المتشائم</span><div class="prob">20%</div><div class="probbar"><span style="width:20%"></span></div><p>تصاعد هجمات نوعية في العمق أو صدمة اقتصادية تُضعف القبضة وتفتح احتقاناً.</p></div>
+  </div>
+
+  <h3 class="sub">المصادر المستخدمة</h3>
+  <ol class="sources">
+    <li><span class="num">1</span> Reuters / AFP — Niamey airport attack, <span class="src-date">18 يونيو 2026</span>. <a href="https://www.reuters.com/world/africa">reuters.com/world/africa</a></li>
+    <li><span class="num">2</span> ACLED — Niger / Liptako-Gourma, <span class="src-date">2026</span>. <a href="https://acleddata.com">acleddata.com</a></li>
+    <li><span class="num">3</span> France24 — Niger junta &amp; security, <span class="src-date">2026</span>. <a href="https://www.france24.com">france24.com</a></li>
+    <li><span class="num">4</span> ISS Africa — Niger, <span class="src-date">2026</span>. <a href="https://issafrica.org">issafrica.org</a></li>
+  </ol>
+</section>
+
+<!-- ============ CHAD ============ -->
+<section class="block" id="chad">
+  <div class="country-hdr">
+    <div><div class="rank">القسم الثاني · 7</div><h2>تشاد</h2><div class="en">CHAD</div></div>
+    <div class="score-badge" style="border-color:#b06a18;background:rgba(224,123,45,.06)">
+      <div class="n" style="color:#f0a94a">6.0</div><div class="t">مؤشر مركّب · متوسط مرتفع</div>
+    </div>
+  </div>
+  <p class="lead">تحافظ تشاد على استقرار داخلي نسبي مع سيطرة شبه كاملة للجيش، لكنها محاطة بأقواس أزمات: تهديد بوكو حرام/داعش غرب أفريقيا في حوض بحيرة تشاد، وارتدادات الحرب السودانية شرقاً عبر ضغط لاجئين هائل، مع ترسيخ الرئيس محمد إدريس ديبي قبضته الداخلية واستمرار اعتقال زعيم المعارضة سوكسيس مسرا.</p>
+
+  <h3 class="sub">أبرز الأحداث خلال الشهر</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th style="width:130px">التاريخ</th><th>الحدث الأمني أو السياسي</th></tr></thead>
+    <tbody>
+      <tr><td class="date-c">طوال الشهر</td><td>ترسيخ الرئيس ديبي قبضته الداخلية مع استمرار اعتقال/محاكمة زعيم المعارضة سوكسيس مسرا وتقييد المجال السياسي. <span class="verify">تطورات قضائية قيد المتابعة</span></td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>استمرار تهديد بوكو حرام/داعش غرب أفريقيا في منطقة حوض بحيرة تشاد مع قدرة على ضرب المواقع العسكرية. <span class="verify">حصيلة الهجمات متباينة</span></td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>ضغط متصاعد من لاجئي السودان على الحدود الشرقية مع مخاطر أمنية وإنسانية وتسرّب سلاح.</td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>استمرار التعاون الأمني الإقليمي وتنويع الشراكات لتقوية موقع تشاد كحليف في مكافحة الإرهاب.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">الاتجاهات الرئيسية</h3>
+  <h4 class="sub2">الأمن</h4>
+  <p>سيطرة قوية للجيش داخلياً، لكن تشاد محاطة بأزمات: تهديد بحيرة تشاد غرباً وارتدادات السودان شرقاً وفوضى ليبيا شمالاً. حوض البحيرة مسرح لهجمات متكررة ذات قدرة على إيقاع خسائر بالجيش.</p>
+  <h4 class="sub2">السياسة والحوكمة</h4>
+  <p>حكم قوي يحافظ على توازنه عبر القبضة الأمنية وتحييد المعارضة، لكن إقصاءها (اعتقال مسرا) يزيد الاحتقان وقد يؤدي لاحقاً لاضطرابات. الشرعية مبنية على استمرارية السلطة بعد انتقال 2021 أكثر من تعددية فعلية.</p>
+  <h4 class="sub2">الاقتصاد</h4>
+  <p>اقتصاد صغير يعتمد على النفط والزراعة، معرّض للصدمات والعقوبات. الأعباء الأمنية والإنسانية (اللاجئون) تضغط على الموارد وتزيد الاعتماد على الدعم الخارجي.</p>
+  <h4 class="sub2">المجتمع</h4>
+  <p>ضغط لجوء سوداني هائل على الحدود الشرقية يفاقم الهشاشة. احتقان سياسي–اجتماعي مرتبط بإقصاء المعارضة تحت قبضة أمنية.</p>
+
+  <h3 class="sub">الفاعلون الرئيسيون</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>الفاعل</th><th>الدور / الوضع</th><th class="c">النفوذ</th><th>الأهداف</th><th class="c">التأثير</th></tr></thead>
+    <tbody>
+      <tr><td>الحكومة التشادية (ديبي)</td><td>السلطة التنفيذية الحالية</td><td class="c"><div class="inf"><span style="width:72%"></span></div></td><td>الحفاظ على الاستقرار وقمع المعارضة وضمان الشراكات</td><td class="c">مرتفع</td></tr>
+      <tr><td>المعارضة (مسرا/أطراف أخرى)</td><td>فضاء سياسي مقيّد</td><td class="c"><div class="inf"><span style="width:28%"></span></div></td><td>إصلاحات سياسية ومدنية أوسع</td><td class="c">منخفض</td></tr>
+      <tr><td>قوات الأمن والتعاون الدولي</td><td>الجيش وحلفاؤه</td><td class="c"><div class="inf"><span style="width:60%"></span></div></td><td>حماية الحدود ومكافحة الإرهاب</td><td class="c">مرتفع</td></tr>
+      <tr><td>بوكو حرام / داعش غرب أفريقيا</td><td>جماعة متطرفة في حوض البحيرة</td><td class="c"><div class="inf"><span style="width:55%"></span></div></td><td>توسيع السيطرة وإرهاب الحكومات</td><td class="c">متوسط–مرتفع</td></tr>
+      <tr><td>شركاء إقليميون ودوليون</td><td>تعاون أمني</td><td class="c"><div class="inf"><span style="width:45%"></span></div></td><td>تضييق الخناق على الإرهاب العابر</td><td class="c">متوسط</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">مؤشرات المخاطر (عشرة مؤشرات)</h3>
+  <div id="dash-chad"></div>
+  <p class="muted" style="font-size:13px">المؤشر الكلي المركّب: <strong>6.0/10</strong> — أمن الحدود (8/10) أبرز نقاط الضغط بفعل لاجئي السودان وحوض البحيرة.</p>
+
+  <h3 class="sub">التقدير الاستخباراتي</h3>
+  <div class="assess">
+    <div class="box what"><h4>ماذا حدث؟</h4><p>ترسيخ ديبي قبضته الداخلية واستمرار اعتقال مسرا، مع ضغط مزدوج من حوض بحيرة تشاد غرباً ولاجئي السودان شرقاً.</p></div>
+    <div class="box why"><h4>لماذا يهمّ؟</h4><p>تشاد عقدة تربط الساحل بليبيا والسودان؛ تماسكها يكبح تمدد الإرهاب، فيما يجعلها موقعها عرضة لتراكم أزمات الجوار.</p></div>
+    <div class="box imp"><h4>التداعيات</h4><p>كلفة أمنية–إنسانية متصاعدة على نجامينا؛ وإقصاء المعارضة قد يولّد توتراً داخلياً لاحقاً رغم رجحان الاستقرار قصير المدى.</p></div>
+  </div>
+
+  <h3 class="sub">التوقعات (30 يوماً)</h3>
+  <div class="scen">
+    <div class="s likely"><span class="tag">المرجّح</span><div class="prob">58%</div><div class="probbar"><span style="width:58%"></span></div><p>استقرار داخلي مُدار مع ضغط حدودي متصاعد وهجمات متطرفة متقطّعة في حوض البحيرة.</p></div>
+    <div class="s best"><span class="tag">المتفائل</span><div class="prob">20%</div><div class="probbar"><span style="width:20%"></span></div><p>احتواء تهديد البحيرة عبر تعاون إقليمي ودعم دولي وتخفيف الضغط الحدودي.</p></div>
+    <div class="s worst"><span class="tag">المتشائم</span><div class="prob">22%</div><div class="probbar"><span style="width:22%"></span></div><p>هجوم نوعي كبير أو انفجار احتقان سياسي مع تفاقم أزمة اللاجئين.</p></div>
+  </div>
+
+  <h3 class="sub">المصادر المستخدمة</h3>
+  <ol class="sources">
+    <li><span class="num">1</span> UNHCR — Chad/Sudan refugees, <span class="src-date">2026</span>. <a href="https://data.unhcr.org">data.unhcr.org</a></li>
+    <li><span class="num">2</span> Reuters / AFP — Chad politics &amp; Masra, <span class="src-date">2026</span>. <a href="https://www.reuters.com/world/africa">reuters.com/world/africa</a></li>
+    <li><span class="num">3</span> ACLED — Lake Chad Basin, <span class="src-date">2026</span>. <a href="https://acleddata.com">acleddata.com</a></li>
+    <li><span class="num">4</span> ISS Africa — Chad, <span class="src-date">2026</span>. <a href="https://issafrica.org">issafrica.org</a></li>
+  </ol>
+</section>
+
+<!-- ============ ALGERIA ============ -->
+<section class="block" id="algeria">
+  <div class="country-hdr">
+    <div><div class="rank">القسم الثاني · 8</div><h2>الجزائر</h2><div class="en">ALGERIA</div></div>
+    <div class="score-badge" style="border-color:#7a6a1c;background:rgba(220,164,44,.06)">
+      <div class="n" style="color:#f0c04a">4.2</div><div class="t">مؤشر مركّب · متوسط</div>
+    </div>
+  </div>
+  <p class="lead">تمثّل الجزائر القاع النسبي لسلّم الخطورة الإقليمي: قوة عسكرية كبيرة تراقب حدودها واستقرار سياسي مُحكم. لكن فترة الرصد شهدت تآكلاً تدريجياً لدورها التقليدي كوسيط في الساحل مع توتر مستمر مع مالي ومحور دول الساحل، فيما تبقى الحدود الجنوبية خط تماس مع فوضى الساحل.</p>
+
+  <h3 class="sub">أبرز الأحداث خلال الشهر</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th style="width:130px">التاريخ</th><th>الحدث الأمني أو السياسي</th></tr></thead>
+    <tbody>
+      <tr><td class="date-c">طوال الشهر</td><td>استمرار التوتر بين الجزائر ومحور دول الساحل (خاصة مالي) وتآكل دورها كوسيط تقليدي في ملفات المنطقة. <span class="verify">قيد المتابعة الدبلوماسية</span></td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>جاهزية أمنية واستخباراتية مرتفعة على الحدود الجنوبية والشرقية (مالي، النيجر، ليبيا) ضد الإرهاب العابر والتهريب.</td></tr>
+      <tr><td class="date-c">طوال الشهر</td><td>استقرار سياسي داخلي مع مقاربة الدولة الأمنية، واقتصاد مدعوم بعائدات الطاقة عرضة لتقلب الأسعار.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">الاتجاهات الرئيسية</h3>
+  <h4 class="sub2">الأمن</h4>
+  <p>أعلى مستوى استقرار داخلي في المجموعة مع جيش محترف وقدرة ردع كبيرة. التهديد الجهادي الداخلي منخفض ومتبقٍّ في خلايا محدودة، والجهد متركّز على تأمين الحدود الجنوبية الطويلة مع الساحل وتداعيات تدهور مالي.</p>
+  <h4 class="sub2">السياسة والحوكمة</h4>
+  <p>نظام مستقر ومحكم بقيادة الرئاسة والمؤسسة العسكرية، بهامش محدود للمعارضة. الاستقرار مضمون قصير المدى لكنه مبني على ضبط أمني، وإرث الحراك يبقى كامناً قد ينشط مع الضغوط الاقتصادية.</p>
+  <h4 class="sub2">الاقتصاد</h4>
+  <p>اعتماد كبير على المحروقات يموّل الموازنة والاحتياطي ويمنح قدرة على امتصاص الصدمات، لكنه يبقي الجزائر رهينة تقلّبات الأسواق. التضخّم والبطالة، خصوصاً بين الشباب، أبرز مصادر الاحتقان المحتمل.</p>
+  <h4 class="sub2">المجتمع</h4>
+  <p>أوضاع إنسانية مستقرة نسبياً مقارنة بالجوار. استياء معيشي كامن مرتبط بالأسعار والتشغيل دون حراك منظّم واسع حالياً.</p>
+
+  <h3 class="sub">الفاعلون الرئيسيون</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>الفاعل</th><th>الدور / الوضع</th><th class="c">النفوذ</th><th>الأهداف</th><th class="c">التأثير</th></tr></thead>
+    <tbody>
+      <tr><td>الرئاسة / المؤسسة العسكرية</td><td>مركز القرار الأمني والسياسي</td><td class="c"><div class="inf"><span style="width:85%"></span></div></td><td>تثبيت الاستقرار وتأمين الحدود والحفاظ على النظام</td><td class="c">مرتفع</td></tr>
+      <tr><td>الأجهزة الأمنية والاستخباراتية</td><td>تأمين داخلي وحدودي ومكافحة إرهاب</td><td class="c"><div class="inf"><span style="width:78%"></span></div></td><td>ردع التهديد العابر وضبط الشبكات</td><td class="c">مرتفع</td></tr>
+      <tr><td>المعارضة والمجتمع المدني</td><td>هامش سياسي محدود</td><td class="c"><div class="inf"><span style="width:25%"></span></div></td><td>توسيع الحريات والمطالب الاجتماعية</td><td class="c">منخفض</td></tr>
+      <tr><td>جماعات متطرفة (عابرة)</td><td>تهديد محدود ومحاصر</td><td class="c"><div class="inf"><span style="width:22%"></span></div></td><td>استغلال أي تراجع أمني</td><td class="c">منخفض</td></tr>
+      <tr><td>شركاء الجوار/الطاقة</td><td>دبلوماسية وأمن وطاقة</td><td class="c"><div class="inf"><span style="width:55%"></span></div></td><td>استقرار الجوار وأمن الإمداد</td><td class="c">متوسط</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">مؤشرات المخاطر (عشرة مؤشرات)</h3>
+  <div id="dash-algeria"></div>
+  <p class="muted" style="font-size:13px">المؤشر الكلي المركّب: <strong>4.2/10</strong> — الأكثر استقراراً إقليمياً، مع تراجع طفيف في التأثير الإقليمي بفعل تآكل دور الوساطة.</p>
+
+  <h3 class="sub">التقدير الاستخباراتي</h3>
+  <div class="assess">
+    <div class="box what"><h4>ماذا حدث؟</h4><p>حافظت الجزائر على استقرارها الداخلي وجاهزيتها الحدودية، لكن دورها كوسيط في الساحل تآكل مع توتر مستمر مع مالي ومحور AES.</p></div>
+    <div class="box why"><h4>لماذا يهمّ؟</h4><p>الجزائر مرساة استقرار في شمال أفريقيا وقوة موازنة في الساحل؛ تراجع وساطتها يفقد المنطقة قناة تهدئة مهمة.</p></div>
+    <div class="box imp"><h4>التداعيات</h4><p>بقاء الجزائر جزيرة استقرار نسبي، لكن تدهور الجوار يرفع كلفة تأمين الحدود ويزيد مخاطر الاختراق الإرهابي والتهريب.</p></div>
+  </div>
+
+  <h3 class="sub">التوقعات (30 يوماً)</h3>
+  <div class="scen">
+    <div class="s likely"><span class="tag">المرجّح</span><div class="prob">62%</div><div class="probbar"><span style="width:62%"></span></div><p>استقرار داخلي متواصل مع جاهزية حدودية مرتفعة واستمرار التوتر مع محور الساحل.</p></div>
+    <div class="s best"><span class="tag">المتفائل</span><div class="prob">22%</div><div class="probbar"><span style="width:22%"></span></div><p>استعادة جزئية لدور الوساطة وانفراج اقتصادي مدعوم بأسعار طاقة جيدة.</p></div>
+    <div class="s worst"><span class="tag">المتشائم</span><div class="prob">16%</div><div class="probbar"><span style="width:16%"></span></div><p>صدمة اقتصادية تُنشّط الحراك أو اختراق إرهابي حدودي نوعي يربك الأمن.</p></div>
+  </div>
+
+  <h3 class="sub">المصادر المستخدمة</h3>
+  <ol class="sources">
+    <li><span class="num">1</span> Reuters / AFP — Algeria &amp; Sahel diplomacy, <span class="src-date">2026</span>. <a href="https://www.reuters.com/world/africa">reuters.com/world/africa</a></li>
+    <li><span class="num">2</span> International Crisis Group — Algeria &amp; Sahel, <span class="src-date">2026</span>. <a href="https://www.crisisgroup.org">crisisgroup.org</a></li>
+    <li><span class="num">3</span> World Bank / IMF — Algeria macro data, <span class="src-date">2024–2026</span>. <a href="https://data.worldbank.org">data.worldbank.org</a></li>
+    <li><span class="num">4</span> ISS Africa — North Africa, <span class="src-date">2026</span>. <a href="https://issafrica.org">issafrica.org</a></li>
+  </ol>
+</section>
+<!-- ============ COMPARATIVE ANALYSIS ============ -->
+<section class="block" id="compare">
+  <span class="kicker">القسم الثالث · 9</span>
+  <h2 class="title">المشهد الإقليمي — التحليل المقارن</h2>
+  <p class="lead">يجمع هذا الفصل المؤشرات القُطرية في صورة واحدة تمكّن صانع القرار من المقارنة السريعة عبر الأبعاد الحاكمة ومؤشر الخطر الكلي.</p>
+
+  <h3 class="sub">مقارنة المؤشرات الجوهرية (0–10، أعلى = أخطر)</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>الدولة</th><th class="c">الأمن</th><th class="c">السياسة</th><th class="c">الاقتصاد</th><th class="c">الإرهاب</th><th class="c">التأثير الإقليمي</th><th class="c">المؤشر الكلي</th></tr></thead>
+    <tbody>
+      <tr><td>السودان</td><td class="score-c" style="background:#7d241b">10</td><td class="score-c" style="background:#7d241b">9</td><td class="score-c" style="background:#7d241b">9</td><td class="score-c" style="background:#7a6a1c">4</td><td class="score-c" style="background:#a8351b">9</td><td class="score-c" style="background:#7d241b">9.0</td></tr>
+      <tr><td>مالي</td><td class="score-c" style="background:#a8351b">9</td><td class="score-c" style="background:#b06a18">7</td><td class="score-c" style="background:#a8351b">8</td><td class="score-c" style="background:#a8351b">9</td><td class="score-c" style="background:#b06a18">7</td><td class="score-c" style="background:#a8351b">7.8</td></tr>
+      <tr><td>النيجر</td><td class="score-c" style="background:#b06a18">7</td><td class="score-c" style="background:#b06a18">6</td><td class="score-c" style="background:#b06a18">6</td><td class="score-c" style="background:#a8351b">8</td><td class="score-c" style="background:#b06a18">6</td><td class="score-c" style="background:#b06a18">7.0</td></tr>
+      <tr><td>ليبيا</td><td class="score-c" style="background:#b06a18">6</td><td class="score-c" style="background:#a8351b">8</td><td class="score-c" style="background:#7a6a1c">5</td><td class="score-c" style="background:#7a6a1c">4</td><td class="score-c" style="background:#b06a18">7</td><td class="score-c" style="background:#b06a18">6.4</td></tr>
+      <tr><td>تشاد</td><td class="score-c" style="background:#7a6a1c">5</td><td class="score-c" style="background:#b06a18">6</td><td class="score-c" style="background:#7a6a1c">5</td><td class="score-c" style="background:#b06a18">7</td><td class="score-c" style="background:#b06a18">6</td><td class="score-c" style="background:#b06a18">6.0</td></tr>
+      <tr><td>الجزائر</td><td class="score-c" style="background:#7a6a1c">4</td><td class="score-c" style="background:#7a6a1c">4</td><td class="score-c" style="background:#7a6a1c">5</td><td class="score-c" style="background:#5f6f29">3</td><td class="score-c" style="background:#7a6a1c">5</td><td class="score-c" style="background:#7a6a1c">4.2</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- radar -->
+  <div class="chart-card">
+    <div class="ct">الرادار المقارن — البصمة الأمنية</div>
+    <div class="cs">كلما اتسعت المساحة زاد الخطر · مقارنة ثلاث دول مفصلية</div>
+    <svg viewBox="0 0 620 420" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Sans Arabic'">
+      <g stroke="#262219" fill="none">
+        <polygon points="310,60 460,160 405,330 215,330 160,160" stroke="#3a3320"/>
+        <polygon points="310,110 410,177 372,290 248,290 210,177"/>
+        <polygon points="310,160 360,193 339,250 281,250 260,193"/>
+      </g>
+      <g stroke="#3a3320">
+        <line x1="310" y1="210" x2="310" y2="60"/><line x1="310" y1="210" x2="460" y2="160"/>
+        <line x1="310" y1="210" x2="405" y2="330"/><line x1="310" y1="210" x2="215" y2="330"/><line x1="310" y1="210" x2="160" y2="160"/>
+      </g>
+      <g fill="#c4bda9" font-size="12" text-anchor="middle">
+        <text x="310" y="48">الأمن</text><text x="486" y="158">السياسة</text>
+        <text x="420" y="352">الاقتصاد</text><text x="200" y="352">الإرهاب</text><text x="130" y="158">التأثير الإقليمي</text>
+      </g>
+      <!-- Sudan 10,9,9,4,9 -->
+      <polygon points="310,60 445,157 393,318 248,283 174,162" fill="rgba(192,57,43,.22)" stroke="#c0392b" stroke-width="2"/>
+      <!-- Mali 9,7,8,9,7 -->
+      <polygon points="310,75 415,170 380,305 174,298 188,170" fill="rgba(208,67,47,.14)" stroke="#d0432f" stroke-width="2"/>
+      <!-- Algeria 4,4,5,3,5 -->
+      <polygon points="310,150 355,193 339,263 270,258 235,184" fill="rgba(220,164,44,.14)" stroke="#dca42c" stroke-width="2"/>
+    </svg>
+    <div class="legend">
+      <span><i style="background:#c0392b"></i>السودان</span>
+      <span><i style="background:#d0432f"></i>مالي</span>
+      <span><i style="background:#dca42c"></i>الجزائر</span>
+    </div>
+  </div>
+
+  <h3 class="sub">ترتيب الدول</h3>
+  <div class="assess" style="grid-template-columns:1fr 1fr">
+    <div class="box" style="border-top-color:#4f9d6b">
+      <h4 style="color:#74c79a">من الأكثر استقراراً ← الأقل</h4>
+      <ul class="clean" style="margin:6px 0">
+        <li><strong>الجزائر</strong> — مرساة الاستقرار (4.2)</li>
+        <li><strong>تشاد</strong> — استقرار مُدار بقبضة أمنية (6.0)</li>
+        <li><strong>ليبيا</strong> — جمود مؤسسي دون قتال شامل (6.4)</li>
+        <li><strong>النيجر</strong> — احتواء نسبي مع تهديد حدودي (7.0)</li>
+        <li><strong>مالي</strong> — تدهور متسارع وحصار (7.8)</li>
+        <li><strong>السودان</strong> — حرب مفتوحة عالية الحدّة (9.0)</li>
+      </ul>
+    </div>
+    <div class="box" style="border-top-color:#c0392b">
+      <h4 style="color:#ff6f5e">من الأعلى خطراً ← الأقل</h4>
+      <ul class="clean" style="margin:6px 0">
+        <li><strong>السودان</strong> — 9.0 · مرتفع جداً</li>
+        <li><strong>مالي</strong> — 7.8 · مرتفع</li>
+        <li><strong>النيجر</strong> — 7.0 · متوسط مرتفع</li>
+        <li><strong>ليبيا</strong> — 6.4 · متوسط مرتفع</li>
+        <li><strong>تشاد</strong> — 6.0 · متوسط مرتفع</li>
+        <li><strong>الجزائر</strong> — 4.2 · متوسط</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="sub">التهديدات المشتركة عبر الدول الست</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>التهديد</th><th class="c">السودان</th><th class="c">مالي</th><th class="c">النيجر</th><th class="c">ليبيا</th><th class="c">تشاد</th><th class="c">الجزائر</th></tr></thead>
+    <tbody>
+      <tr><td>الإرهاب</td><td class="c">متوسط</td><td class="c" style="color:#ff6f5e">حرج</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c">متوسط</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c" style="color:#74c79a">منخفض</td></tr>
+      <tr><td>الهجرة غير النظامية</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c">متوسط</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c" style="color:#ff6f5e">حرج</td><td class="c">متوسط</td><td class="c">متوسط</td></tr>
+      <tr><td>الجريمة المنظمة</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c" style="color:#ff6f5e">حرج</td><td class="c">متوسط</td><td class="c">متوسط</td></tr>
+      <tr><td>تهريب السلاح</td><td class="c" style="color:#ff6f5e">حرج</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c" style="color:#ff6f5e">حرج</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c">متوسط</td></tr>
+      <tr><td>نزاعات عابرة للحدود</td><td class="c" style="color:#ff6f5e">حرج</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c">متوسط</td><td class="c" style="color:#ff9a5c">مرتفع</td><td class="c" style="color:#74c79a">منخفض</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><strong>الخلاصة:</strong> تتقاطع التهديدات بأعلى كثافة في محور <em>ليبيا–الساحل</em> (تهريب وسلاح وهجرة) ومحور <em>السودان–تشاد</em> (نزوح ونزاع عابر)، ما يجعل أي معالجة قطرية معزولة محدودة الأثر دون تنسيق إقليمي.</div>
+</section>
+
+<!-- ============ STRATEGIC OUTLOOK ============ -->
+<section class="block" id="outlook">
+  <span class="kicker">القسم الثالث · 10</span>
+  <h2 class="title">الاستشراف الاستراتيجي (30 يوماً)</h2>
+
+  <h3 class="sub">السيناريو الإقليمي المرجّح</h3>
+  <p><strong>توازن هشّ سالب:</strong> تثبيت أنماط العنف المزمن دون انفراج، مع استمرار حرب السودان كمصدّر رئيسي لعدم الاستقرار، وتحوّل حصار مالي إلى خطر وجودي على اقتصاد الدولة، وضغط متصاعد على النيجر وحوض بحيرة تشاد. يبقى محور الساحل متماسكاً سياسياً لكنه عاجز عن عكس المسار الأمني، فيما تواصل الجزائر دور المرساة رغم تآكل وساطتها.</p>
+
+  <div class="scen">
+    <div class="s likely"><span class="tag">المرجّح إقليمياً</span><div class="prob">63%</div><div class="probbar"><span style="width:63%"></span></div><p>استمرار التدهور المُدار: لا حسم في السودان، اشتداد حصار مالي، استقرار شمالي نسبي.</p></div>
+    <div class="s best"><span class="tag">الأفضل</span><div class="prob">15%</div><div class="probbar"><span style="width:15%"></span></div><p>هدنات إنسانية واختراقات تفاوضية محدودة تخفّف الضغط دون حلّ جذري.</p></div>
+    <div class="s worst"><span class="tag">الأسوأ</span><div class="prob">22%</div><div class="probbar"><span style="width:22%"></span></div><p>سقوط الأُبيّض وخنق باماكو وموجة نزوح كبرى تتجاوز قدرة الجوار على الاستيعاب.</p></div>
+  </div>
+
+  <h3 class="sub">مؤشرات الإنذار المبكّر للمراقبة</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>المؤشر</th><th>دلالة التصعيد</th></tr></thead>
+    <tbody>
+      <tr><td>مصير معركة الأُبيّض في السودان</td><td>سقوطها يفتح الطريق نحو الوسط ويطلق نزوحاً واسعاً.</td></tr>
+      <tr><td>اتساع حصار JNIM للوقود في مالي</td><td>اقتراب خنق باماكو وأزمة طاقة/غذاء حادة.</td></tr>
+      <tr><td>تكرار هجمات العمق في النيجر</td><td>تآكل صورة «استعادة السيادة الأمنية».</td></tr>
+      <tr><td>تدفقات اللجوء على حدود تشاد</td><td>ضغط إنساني–أمني يهدّد التوازن الداخلي.</td></tr>
+      <tr><td>هشاشة هدنة طرابلس في ليبيا</td><td>تجدد اشتباكات يعطّل الزخم السياسي والنفط.</td></tr>
+      <tr><td>صدمة أسعار الطاقة في الجزائر</td><td>إحياء محتمل للحراك الاجتماعي.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">توصيات تحليلية لصانع القرار</h3>
+  <ul class="clean">
+    <li><strong>التنسيق الإقليمي أولاً:</strong> أي استجابة قطرية معزولة محدودة؛ المطلوب آلية تنسيق أمني–إنساني عابرة للحدود.</li>
+    <li><strong>أولوية احتواء حصار مالي</strong> بوصفه العقدة الحاكمة لمنع انهيار اقتصادي–أمني متسلسل.</li>
+    <li><strong>أولوية الممرات الإنسانية في السودان</strong> لتفادي تصدير الأزمة نحو الجوار.</li>
+    <li><strong>ضبط فضاء التهريب الليبي–الساحلي</strong> لقطع تمويل الفاعلين غير الدولتيين.</li>
+    <li><strong>الاستثمار في الاستقرار الاقتصادي</strong> كخط دفاع أول ضد التطرف والاحتجاج.</li>
+  </ul>
+</section>
+
+<!-- ============ REFERENCES ============ -->
+<section class="block" id="refs">
+  <span class="kicker">القسم الثالث · 11</span>
+  <h2 class="title">قائمة المراجع الكاملة</h2>
+  <div class="note"><strong>منهجية التوثيق:</strong> يُعتمد نظام موحّد (المصدر — العنوان — تاريخ النشر — الرابط). تُرفق مع كل دولة مصادرها المباشرة أعلاه، وتُجمَّع هنا قائمة مرجعية شاملة. البنود الموسومة بعلامة التحقق تستلزم مطابقة نهائية قبل الإصدار الرسمي.</div>
+
+  <h3 class="sub">المؤسسات الدولية ومصادر البيانات</h3>
+  <ol class="sources">
+    <li><span class="num">1</span> الأمم المتحدة ومجلس الأمن — إحاطات وقرارات (UNSMIL, OCHA, UNHCR). <a href="https://www.un.org">un.org</a></li>
+    <li><span class="num">2</span> الاتحاد الأفريقي — مجلس السلم والأمن. <a href="https://au.int/en/psc">au.int/en/psc</a></li>
+    <li><span class="num">3</span> ACLED — قاعدة بيانات أحداث ونزاعات مسلحة. <a href="https://acleddata.com">acleddata.com</a></li>
+    <li><span class="num">4</span> International Crisis Group — تقارير ومتابعات. <a href="https://www.crisisgroup.org">crisisgroup.org</a></li>
+    <li><span class="num">5</span> ISS Africa — معهد الدراسات الأمنية. <a href="https://issafrica.org">issafrica.org</a></li>
+    <li><span class="num">6</span> SIPRI · Chatham House · Carnegie · RAND — تحليلات استراتيجية وبيانات تسليح.</li>
+    <li><span class="num">7</span> Small Arms Survey — تدفقات السلاح. <a href="https://www.smallarmssurvey.org">smallarmssurvey.org</a></li>
+    <li><span class="num">8</span> World Bank · IMF — المؤشرات الاقتصادية القُطرية. <a href="https://data.worldbank.org">data.worldbank.org</a></li>
+  </ol>
+
+  <h3 class="sub">الوكالات الإخبارية والمصادر المتخصصة</h3>
+  <ol class="sources">
+    <li><span class="num">9</span> Reuters · AP · AFP — الرصد اليومي والتحقق المتقاطع. <a href="https://www.reuters.com/world/africa">reuters.com/world/africa</a></li>
+    <li><span class="num">10</span> BBC · France24 · Al Jazeera · DW · Sky News · The Africa Report — تغطية وتحليل.</li>
+    <li><span class="num">11</span> Africa Intelligence · Sahel Intelligence · Janes · DefenceWeb · Military Africa — تفاصيل عسكرية واستخباراتية. <span class="verify">مصادر اشتراك متخصصة</span></li>
+    <li><span class="num">12</span> وزارات الدفاع والخارجية والرئاسات الوطنية — البيانات الرسمية.</li>
+  </ol>
+</section>
+</div><!-- /page -->
+
+<footer>
+  <div class="org">مركز هيسبيريديس للدراسات الأمنية والاستراتيجية</div>
+  <div style="color:var(--muted);font-size:12px;margin-top:4px">Hesperides Centre for Security &amp; Strategic Studies</div>
+  <div class="dis">
+    وثيقة تقييم استراتيجي مبنية على الاستخبارات مفتوحة المصدر (OSINT) لفترة الرصد 22 مايو – 21 يونيو 2026.
+    التقييمات تقديرية وتعكس قراءة المركز للمعطيات المتاحة وقت الإعداد. البنود الموسومة بعلامة التحقق ⚑ تستلزم مطابقة نهائية مع المصادر الأولية.
+    لا تشكّل هذه الوثيقة مشورة قانونية أو مالية أو استثمارية.
+    رقم الوثيقة: HCSS/SAH-NA/MR-2026-06 · التصنيف: تحليلي تقديري · للتوزيع المحدود.
+  </div>
+</footer>
+<script>
+// ===== Risk dashboard engine + interactivity =====
+const INDICATORS = ["الاستقرار الأمني","التهديد الإرهابي","الاستقرار السياسي","الاستقرار الاقتصادي",
+  "الأوضاع الإنسانية","أمن الحدود","التدخلات الخارجية","الجريمة المنظمة","الاحتجاجات الاجتماعية","التأثير الإقليمي"];
+
+function band(v){
+  if(v>=10)return["خطر مرتفع جداً","c-ext","bd-ext","x-ext"];
+  if(v>=8) return["خطر مرتفع","c-high","bd-high","x-high"];
+  if(v>=6) return["متوسط مرتفع","c-elev","bd-elev","x-elev"];
+  if(v>=4) return["خطر متوسط","c-med","bd-med","x-med"];
+  if(v>=2) return["خطر منخفض","c-low","bd-low","x-low"];
+  return["خطر محدود","c-low","bd-low","x-low"];
+}
+function trendTag(t){
+  if(t==="up")return'<span class="trend t-up">▲ تدهور</span>';
+  if(t==="down")return'<span class="trend t-dn">▼ تحسّن</span>';
+  return'<span class="trend t-fl">■ مستقر</span>';
+}
+// data: scores[10], trends[10]
+const RISK = {
+  libya:  {s:[6,4,8,5,5,8,9,8,5,7], t:["down","flat","down","down","flat","up","flat","up","flat","flat"]},
+  sudan:  {s:[10,4,9,9,10,9,8,8,5,9], t:["up","flat","flat","up","up","up","up","up","flat","up"]},
+  mali:   {s:[9,9,7,8,8,8,6,7,5,7], t:["up","up","flat","up","up","up","flat","up","flat","up"]},
+  niger:  {s:[7,8,6,6,6,8,6,6,4,6], t:["up","up","flat","down","flat","up","up","flat","flat","flat"]},
+  chad:   {s:[5,7,6,5,7,8,5,6,5,6], t:["flat","up","up","flat","up","up","flat","flat","up","flat"]},
+  algeria:{s:[4,3,4,5,2,6,4,5,4,5], t:["flat","flat","flat","flat","flat","up","flat","flat","flat","down"]},
+};
+function renderDash(id, key){
+  const d=RISK[key]; const el=document.getElementById(id); if(!el)return;
+  let h='<div class="dash">';
+  for(let i=0;i<10;i++){
+    const v=d.s[i], b=band(v), pct=v*10;
+    h+=`<div class="drow">
+      <span class="lbl">${INDICATORS[i]}</span>
+      <div class="track"><div class="fill ${b[1]}" data-w="${pct}" style="width:0"></div></div>
+      <span class="val ${b[3]}">${v}</span>
+      <span class="band ${b[2]}">${b[0]}</span>
+      ${trendTag(d.t[i])}
+    </div>`;
+  }
+  h+='</div>';
+  el.innerHTML=h;
+}
+window.addEventListener('DOMContentLoaded',()=>{
+  ['libya','sudan','mali','niger','chad','algeria'].forEach(k=>renderDash('dash-'+k,k));
+  // animate bars when scrolled into view
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){
+    e.target.querySelectorAll('.fill').forEach(f=>{f.style.width=f.dataset.w+'%';});
+    io.unobserve(e.target);
+  }});},{threshold:.2});
+  document.querySelectorAll('.dash').forEach(d=>io.observe(d));
+  // progress bar
+  window.addEventListener('scroll',()=>{
+    const h=document.documentElement;
+    const p=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;
+    document.getElementById('progress').style.width=p+'%';
+  });
+});
+</script>
+</body></html>
